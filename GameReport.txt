@@ -9,6 +9,7 @@ Some ideas of NPC's the player might meet include:
 	- An old depressed man with no will or desire to outrun the storm. 
 	- A woman who believes the storm is gods rapture. 
 	- A kid on their bike who got lost from their parents. 
+	- A man who appears to be infected by the storm but is still asking for a ride. 
 
 As the game continues, the sky outside will transition from sunny blue, to cloudy, to stormy, to hurricane level, to black clouds and apocalyptic level lightning strikes. There is no timer on the screen, the progression of the game is only measured by the sky.
 
