@@ -6,25 +6,24 @@ using UnityEngine;
 [System.Serializable]
 public class CharacterData
 {
+    // references for ui/dialogue things
     public string internalName;
     public string displayName;
     public string portraitPath;
     public string voiceEffect;
     public string dialogueFile;
 
-    public int hunger;
-    public int happiness;
-    public int health;
-    public Boolean healthy;
-
+    // list of all "flags" associated w a character 
+    // aka whether they have been met, killed, etc.
     public Dictionary<string, bool> flags = new Dictionary<string, bool>();
 
-    [System.Serializable]
-    public class ScheduleEntry
-    {
-        public string time;
-        public string location;
-    }
+    // dynamic stats, will change throughout the game
+    public int hunger;
+    public int stress;
+    public int health;
+    public Boolean sick;
+
+    
 
     public void SetFlag(string flag, bool value)
     {
@@ -55,56 +54,4 @@ public class CharacterData
         }
         return true;
     }
-
-    //public List<FlagEntry> ToFlagList()
-    //{
-    //    var list = new List<FlagEntry>();
-    //    foreach (var kvp in flags)
-    //    {
-    //        list.Add(new FlagEntry
-    //        {
-    //            key = kvp.Key,
-    //            value = kvp.Value
-    //        });
-    //    }
-
-    //    Debug.Log($"{internalName} has {list.Count} flags to save.");
-    //    return list;
-    //}
-
-    //public void LoadFlagsFromList(List<FlagEntry> flagList)
-    //{
-    //    flags.Clear();
-    //    foreach (var entry in flagList)
-    //    {
-    //        flags[entry.key] = entry.value;
-    //    }
-    //}
-
-
-
-
-
-
-    //[System.Serializable]
-    //public class ScheduleEntryGroup
-    //{
-    //    public string key;
-    //    public string day;
-    //    public List<ScheduleEntry> value;
-    //}
-
-    //[System.Serializable]
-    //public class StringIntPair
-    //{
-    //    public string key;
-    //    public int value;
-    //}
-
-    //[System.Serializable]
-    //public class StringBoolPair
-    //{
-    //    public string key;
-    //    public bool value;
-    //}
 }

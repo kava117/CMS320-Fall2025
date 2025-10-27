@@ -1,16 +1,12 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    
+    public string GetLocation()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        var currentScene = SceneManager.GetActiveScene();
+        return currentScene.name; 
     }
 }
