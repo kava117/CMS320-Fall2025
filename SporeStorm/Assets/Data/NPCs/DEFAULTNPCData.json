@@ -1,0 +1,36 @@
+{
+	"internalName": "DefaultNPC",
+	"displayName": "Default NPC",
+	"flags": {
+		"metPlayer": false,
+		"talkedToToday": false,
+		"gaveGiftToday": false
+	},
+	"portraitPath": "Sprites/NPCs/DefaultNPCPortraitDefault",
+	"voiceEffect": "Audio/Voices/DefaultNPCVoice",
+	"dialogueFile": "Data/Dialogue/DefaultNPCDialogue",
+	"likes": [""],
+	"dislikes": [""],
+	"schedule": {
+		"beforeTown": {
+			"Monday": [
+			{ "time": "", "location": "" },
+			{ "time": "", "location": "" }
+			]
+		},
+		"inTown": {
+			"Monday": [
+				{ "time": "", "location": "" }
+			]
+		}
+	},
+	"friendshipThresholds": {
+		"acquaintance": 10,
+		"friend": 30,
+		"bestFriend": 60
+	},
+	"flags": {
+		"hasMet": true,
+		"livesInTown": true
+	}
+}

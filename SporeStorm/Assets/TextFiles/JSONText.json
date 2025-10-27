@@ -1,0 +1,48 @@
+{
+	"interaction": [
+		{
+			"name": "Cielle",
+			"dialogueEvents": [
+				{
+					"key": "greeting",
+					"conditions": [],
+					"lines": [
+						"Hey!",
+						"Um... how did I get here?",
+						"Can you even talk back?",
+						"Talk about awwwwkward..."
+					]
+				},
+				{
+					"key": "afterIntro",
+					"conditions": ["metPlayer"],
+					"lines": [
+						"I guess I just have to sit here.",
+						"How long is this gonna take?",
+						"Oh, right. Forgot you can't talk yet."
+					]
+				}
+			]
+		},
+		{
+			"name": "NPC2",
+			"dialogueEvents": [
+				{
+					"key": "greeting",
+					"conditions": [],
+					"lines": [
+						"Hi, I'm the the other NPC!",
+						"I have multi line dialogue."
+					]
+				},
+				{
+					"key": "afterIntro",
+					"conditions": ["metPlayer"],
+					"lines": [
+						"I love waiting around!!"
+					]
+				}
+			]
+		}
+	]
+}
