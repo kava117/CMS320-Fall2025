@@ -1,0 +1,15 @@
+{
+	"internalName": "DefaultNPC",
+	"displayName": "Default NPC",
+	"portraitPath": "Sprites/NPCs/DefaultNPCPortraitDefault",
+	"voiceEffect": "Audio/Voices/DefaultNPCVoice",
+	"dialogueFile": "Data/Dialogue/DefaultNPCDialogue",
+	"hunger": 0,
+	"stress": 0,
+	"health": 0,
+	"sick": False,
+	"flags": {
+		"hasMet": true,
+		"inCar": true
+	}
+}

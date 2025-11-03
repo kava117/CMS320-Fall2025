@@ -19,6 +19,6 @@ public class StartButtonBehavior : MonoBehaviour
 
     private void ChangeSceneMap()
     {
-        sceneController.ChangeScene("Map");
+        sceneController.ChangeScene("Map", "Menu");
     }
 }

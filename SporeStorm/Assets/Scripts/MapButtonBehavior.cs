@@ -20,6 +20,6 @@ public class MapButtonBehavior : MonoBehaviour
 
     private void ChangeSceneEvent()
     {
-        sceneController.ChangeScene("Event", button.name);
+        sceneController.ChangeScene("Event", "Map", button.name);
     }
 }

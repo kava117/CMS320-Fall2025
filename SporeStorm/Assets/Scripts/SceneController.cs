@@ -5,10 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
+    [SerializeField] private SceneLoader sceneLoader;
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
     }
 
     // Update is called once per frame
@@ -17,16 +19,19 @@ public class SceneController : MonoBehaviour
 
     }
 
-    // for loading a "general", static scene (aka: main menu, map, etc.)
-    public void ChangeScene(string name)
+    // for loading ""static" scenes, the menu/map/etc
+    public void ChangeScene(string sceneName, string currentSceneName)
     {
-        SceneManager.LoadScene(name);
+        SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
+        SceneManager.UnloadSceneAsync(currentSceneName);
     }
 
     // for loading an event scene
-    public void ChangeScene(string name, string sceneEvent)
+    public void ChangeScene(string sceneName, string currentSceneName, string sceneLocation)
     {
-        SceneManager.LoadScene(name);
+        SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
+        SceneManager.UnloadSceneAsync(currentSceneName);
         // add sceneloader method here to load the specific event assets
+        sceneLoader.PopulateScene(sceneLocation);
     }
 }

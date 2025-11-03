@@ -5,7 +5,7 @@ using System;
 public class DialogueEvent
 {
     public string key;
-    public DialogueLine[] lines;
     public string[] conditions;
+    public DialogueLine[] lines;
     public string[] setFlags;
 }
