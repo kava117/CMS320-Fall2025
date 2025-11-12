@@ -9,16 +9,16 @@ public class StartButtonBehavior : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
-        button.onClick.AddListener(ChangeSceneMap);
+        button.onClick.AddListener(ChangeSceneNarration);
     }
 
     private void OnDestroy()
     {
-        button.onClick.RemoveListener(ChangeSceneMap);
+        button.onClick.RemoveListener(ChangeSceneNarration);
     }
 
-    private void ChangeSceneMap()
+    private void ChangeSceneNarration()
     {
-        sceneController.ChangeScene("Map", "Menu");
+        sceneController.ChangeScene("Narration", "Menu");
     }
 }

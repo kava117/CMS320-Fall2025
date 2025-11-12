@@ -7,7 +7,7 @@
 	"hunger": 0,
 	"stress": 0,
 	"health": 0,
-	"sick": False,
+	"sick": false,
 	"flags": {
 		"hasMet": true,
 		"inCar": true

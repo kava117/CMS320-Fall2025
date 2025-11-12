@@ -1,0 +1,59 @@
+{
+    "dialogueEvents": [
+        {
+            "key": "pre-scene",
+            "conditions": [""],
+            "lines": [
+                { "text": "After grabbing your most valuable items and packaging your life in a matter of minutes, you drove until the looming clouds behind you felt more like a distant nightmare than an active threat.", "expression": "player" },
+                { "text": "Your knuckles are white on the steering wheel, breaths tight in your chest as you drive on in silece.", "expression": "player" },
+                { "text": "In the distance, you can see something that looks like a mechanic shop.", "expression": "player" },
+                { "text": "Maybe there were supplies here?", "expression": "player" }
+            ],
+            "setFlags": ["loadBackground"]
+        },
+        {
+            "key": "start scene",
+            "conditions": [""],
+            "lines": [
+                { "text": "The place looks recently abandoned, cars still hoisted in the air and doors half-propped.", "expression": "player" },
+                { "text": "You look around and realize that everything is similarly abandoned, streets empty.", "expression": "player" },
+                { "text": "With a deep breath, you walk into the shop.", "expression": "player" },
+                { "text": "...", "expression": "player" },
+                { "text": "You start rooting through bins and bags, trying to find anything that might be useful to you.", "expression": "player" },
+                { "text": "...", "expression": "player" },
+                { "text": "Hmm... nothing here... maybe over there..?", "expression": "player" },
+                { "text": "...", "expression": "player" },
+                { "text": "...", "expression": "player" }
+            ],
+            "setFlags": ["introJane"]
+        },
+        {
+            "key": "jane intro",
+            "conditions": [],
+            "lines": [
+                { "text": "Hey!", "expression": "janeSilhouette" },
+                { "text": "You!", "expression": "janeSilhouette" },
+                { "text": "Oh, shit. You duck behind a car and pray you didn't get spotted.", "expression": "player" },
+                { "text": "There's no reason to hide if you're friendly.", "expression": "janeSilhouette" },
+            ],
+            "setFlags": ["npc:metPlayer"]
+        },
+        {
+            "key": "afterIntro",
+            "conditions": ["npc:metPlayer"],
+            "lines": [
+                { "text": "THIS IS THE DEFAULT AFTERINTRO.", "expression": "default" }
+            ],
+            "setFlags": []
+        },
+        {
+            "key": "raining",
+            "conditions": ["raining"],
+            "lines": [
+                { "text": "THIS IS THE DEFAULT RAINING DIALOGUE.", "expression": "default"},
+                { "text": "BLAH BLAH CHECKING THAT LINE READING WORKS.", "expression": "default"}
+            ],
+            "setFlags": []
+        }
+    ]
+}

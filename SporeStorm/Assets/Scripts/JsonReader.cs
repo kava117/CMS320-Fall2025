@@ -31,7 +31,7 @@ public class JsonReader : MonoBehaviour
 
         // load dialogue file
         string npcName = data.internalName;
-        TextAsset jsonFile = Resources.Load<TextAsset>($"../Data/Dialogue/{npcName}Dialogue");
+        TextAsset jsonFile = Resources.Load<TextAsset>($"Data/Dialogue/{npcName}Dialogue");
         DialogueEventList eventList = JsonUtility.FromJson<DialogueEventList>(jsonFile.text);
 
         // find the event w correct conditions/key
