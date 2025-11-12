@@ -1,0 +1,72 @@
+Location: Mechanic's Store, Day, 3:00pm 
+
+Player( to themself): It's hard to believe the news is real. An infectious purple storm coming from the sky? Sounds like a plot to a horrible movie. What's next? Zombies coming out of the graves?
+
+*Player notices lone mechanic waiting outside what appears to be an abandoned garage* 
+
+Player (to themself): Looks like people really are taking this warning to heart, the whole town looks empty. 
+
+Mechanic: What are you still doing here? They sent out the evacuation notice 3 hours ago. 
+
+Player: I guess the same could be said about you.
+
+Mechanic: You make a fair point. What's the problem? You don't seem too rushed to get out of here. 
+
+
+Player: 
+Option 1: I just find this all hard to believe. A mutant spore storm? Cmon that seems childish. 
+
+Option 2: I was on my way out now, just had to get some things in order before I leave everything I own. 
+
+
+
+
+If Option 1: 
+Mechanic: I wouldn't be too sure about that. I've seen some of the people they've been wheeling across these streets, they look pretty bad. Rashes and blisters all over their face, some of them throwing up everywhere. 
+
+
+If Option 2: 
+Mechanic: Guess thats a fair point. I've heard it's pretty bad though. Seen some sick people around here with blisters and rashes all over. Looks painful 
+
+
+
+Both options Return here: 
+
+Player: Oh my god thats awful, maybe the news outlets were right for once. If you saw it all, why aren't you leaving? 
+
+
+Mechanic: Can't, the government shut down the buses I'm left to sit here and ride it out. I ain't religious but I might as well start praying. You better start moving again, I heard the storms an equivalent of a cat 4 hurricane. 
+
+
+
+Player: 
+Option 1: Well I can't just leave you stranded here alone, can I offer you a ride? 
+
+Option 2: Probably a good idea, I better start early while I can. Good Luck out there!
+
+
+
+If option 1: 
+Mechanic: Are you sure? I wouldn't want to be a burden. I've handled a lot in my day, nothing some sheltering won't fix.
+
+Player: No please, I insist. No decent human could leave someone here all alone. 
+
+Jane: My name's Jane by the way, figured you might want to know before you let me in your car. 
+
+Player: Pleasure to meet you Jane, looks like we got a long ride ahead of us. 
+
+
+If Option 2: 
+Mechanic: Yeah, I get it. No sense in both of us waiting around for something we can’t stop.
+
+Player: I’ll keep that in mind. Hope you make it through this, alright?
+
+Mechanic: You too, kid. Drive safe out there. 
+
+Player(to themself): Maybe this is bigger than I thought 
+
+*Car Engine Starts* 
+
+
+
+
