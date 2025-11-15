@@ -6,38 +6,96 @@ using UnityEngine.UI;
 
 public class SceneLoader : MonoBehaviour
 {
-    [SerializeField] private DialogueController dialogueController;
-    [SerializeField] private NPC temporary;
+    // for fetching game data
+    [SerializeField] private Worldstate worldstate;
+    [SerializeField] private DialogueManager dialogueManager;
+    // SCENE ui things
+    [SerializeField] private Canvas sceneUI;
+    [SerializeField] private Image sceneBackground;
+    [SerializeField] private Image portraitPanel;
+    [SerializeField] private Image sun;
+    [SerializeField] private Image gas;
+    [SerializeField] private Image inventory;
+    // MAP ui things
+    [SerializeField] private Canvas mapUI;
+    [SerializeField] private Image mapBackground;
+    [SerializeField] private Image storm;
+    [SerializeField] private Sprite FloridaButton;
+
     private int sceneLevel = 0;
-    [SerializeField] private Image backgroundCanvas;
     private Sprite backgroundSprite;
     private string backgroundSpriteName;
 
 
     private void Awake()
     {
-        //AssignBackground("Missouri");
+        // disables everything from the start for safety
+        Debug.Log("disabling scene on awake");
+        DisableSceneUI();
 
-        LoadDialogueEvent("Jane");
+        Debug.Log("scene laoder: trying to load map");
+        LoadMap();
+        Debug.Log("scene ladoer: laoded map");
     }
 
     public void LoadDialogueEvent(string locationName)
     {
-        dialogueController.StartDialogue(temporary);
+        GameEventsManager.instance.dialogueEvents.EnterDialogue(locationName);
     }
 
-    public void AssignBackground(string locationName)
+    /**
+     * SCENE STUFF
+     */
+    public void EnableSceneUI()
     {
-        backgroundSpriteName = locationName + "Background";
-        // find background image
-        backgroundSprite = Resources.Load<Sprite>($"../Images/Backgrounds/{backgroundSpriteName}");
-        // attach
-        backgroundCanvas.sprite = backgroundSprite;
+        sceneUI.gameObject.SetActive(true);
     }
 
-    public string GetLocation()
+    public void DisableSceneUI()
     {
-        var currentScene = SceneManager.GetActiveScene();
-        return currentScene.name;
+        sceneUI.gameObject.SetActive(false);
+    }
+
+    public void LoadScene(string locationName)
+    {
+        string sceneBackgroundName = locationName + "Background";
+        sceneBackground = Resources.Load<Image>($"../Images/Backgrounds/{sceneBackgroundName}");
+
+        DisableMapUI(); // disable the map
+        EnableSceneUI(); // re-enable general ui
+
+        LoadDialogueEvent(locationName); // fetch dialogue and load all dialogue ui
+
+
+
+
+        //backgroundSpriteName = worldstate.GetLocation() + "Background";
+        //// find background image
+        //backgroundSprite = Resources.Load<Sprite>($"../Images/Backgrounds/{backgroundSpriteName}");
+        //// attach
+        //Background.sprite = backgroundSprite;
+    }
+
+
+    /**
+     * MAP STUFF
+     */
+    public void EnableMapUI()
+    {
+        mapUI.gameObject.SetActive(true);
+    }
+
+    public void DisableMapUI()
+    {
+        mapUI.gameObject.SetActive(false);
+    }
+
+    public void LoadMap()
+    {
+        // IMPLEMENT LATER: FETCH MOST RECENT CHANGES/AKA THE STORM's MOVEMENT
+        Debug.Log("trying ot load map");
+        EnableMapUI(); // gets the map ui showing
+        Debug.Log("loaded map");
+
     }
 }

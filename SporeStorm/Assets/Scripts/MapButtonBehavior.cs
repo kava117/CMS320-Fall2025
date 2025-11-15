@@ -10,16 +10,17 @@ public class MapButtonBehavior : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
-        button.onClick.AddListener(ChangeSceneEvent);
+        button.onClick.AddListener(ChangeScenePlaying);
     }
 
     private void OnDestroy()
     {
-        button.onClick.RemoveListener(ChangeSceneEvent);
+        button.onClick.RemoveListener(ChangeScenePlaying);
     }
 
-    private void ChangeSceneEvent()
+    private void ChangeScenePlaying()
     {
-        sceneController.ChangeScene("Event", "Map", button.name);
+        //sceneController.ChangeScenePlaying(button.gameObject.name);
+        sceneController.ChangeScenePlaying(button.gameObject.name);
     }
 }

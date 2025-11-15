@@ -45,7 +45,7 @@ public class DialogueManager : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             // if dialogue not playing, you cant let the user skip dialogue
             if (!dialoguePlaying)
@@ -88,12 +88,6 @@ public class DialogueManager : MonoBehaviour
 
     private void ContinueOrExitStory()
     {
-        index++;
-        if (index == 3)
-        {
-            Portrait.SetActive(true);
-        }
-
         // make a choice, if applicable
         if (story.currentChoices.Count > 0 && currentChoiceIndex != -1)
         {
@@ -128,8 +122,5 @@ public class DialogueManager : MonoBehaviour
 
         // reset story state
         story.ResetState();
-
-        // move to end screen
-        sceneController.ChangeScene("End", "Event");
     }
 }

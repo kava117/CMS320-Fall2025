@@ -5,32 +5,31 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
+    [SerializeField] private SceneLoader sceneLoader;
 
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    // for loading ""static" scenes, the menu/map/etc
+    public void ChangeSceneNarration()
     {
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        SceneManager.LoadScene("Narration");
     }
 
     // for loading ""static" scenes, the menu/map/etc
-    public void ChangeScene(string sceneName, string currentSceneName)
+    public void ChangeSceneMap()
     {
-        //SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
-        //SceneManager.UnloadSceneAsync(currentSceneName);
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene("Playing");
     }
 
     // for loading an event scene
-    public void ChangeScene(string sceneName, string currentSceneName, string sceneLocation)
+    public void ChangeScenePlaying(string locationName)
     {
-        //SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
-        //SceneManager.UnloadSceneAsync(currentSceneName);
-        SceneManager.LoadScene(sceneName);
+        if (locationName == "Florida")
+        {
+            SceneManager.LoadScene("Playing");
+            sceneLoader.LoadScene(locationName);
+        }
+        else
+        {
+            sceneLoader.LoadScene(locationName);
+        }
     }
 }

@@ -19,6 +19,6 @@ public class StartButtonBehavior : MonoBehaviour
 
     private void ChangeSceneNarration()
     {
-        sceneController.ChangeScene("Narration", "Menu");
+        sceneController.ChangeSceneNarration();
     }
 }

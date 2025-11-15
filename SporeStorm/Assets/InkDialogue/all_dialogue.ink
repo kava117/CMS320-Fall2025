@@ -1,8 +1,8 @@
--> Jane
+-> Missouri
 VAR onScreen = false
 
 
-=== Jane ===
+=== Missouri ===
 It's hard to believe the news is real... a giant, infectious storm? That sounds like the plot to some horrible movie.
 * [What's next, zombies?]
 * [This whole town is so empty...]

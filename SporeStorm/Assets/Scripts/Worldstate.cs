@@ -3,8 +3,20 @@ using UnityEngine;
 
 public class Worldstate : MonoBehaviour
 {
-    public static Worldstate Instance;
-    private Dictionary<string, bool> flags = new Dictionary<string, bool>();
+    public object Instance { get; private set; }
+
+    private string currentLocation; // current "state" the player is in
+    private string[] locationHistory = new string[9]; // stores every visited location
+    private int numPlacesVisited;
+    private int dayNumber;
+    private int hoursLeft;
+    private static int totalHours = 12;
+    private double food;
+    private double water;
+    private double fuel;
+    private int numPeopleInCar;
+    private string[] peopleInCar;
+
 
     private void Awake()
     {
@@ -17,35 +29,19 @@ public class Worldstate : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        locationHistory[0] = "Florida"; // setting first location on startup
     }
 
-    public void SetFlag(string flag, bool value)
+    public void SetLocation(string newLocation)
     {
-        if (flag == null)
-        {
-            Debug.Log($"No flag found to update.");
-            return;
-        }
-
-        flags[flag] = value;
-
-        Debug.Log($"Flag set: {flag} = {value}");
+        locationHistory[numPlacesVisited] = newLocation; // adding new visit to location list
+        numPlacesVisited++; // incrementing number of visits
+        currentLocation = newLocation; 
     }
 
-    public bool HasFlag(string flag)
+    public string GetLocation()
     {
-        return flags.TryGetValue(flag, out bool value) && value;
-    }
-
-    public bool HasAllFlags(List<string> requiredFlags)
-    {
-        foreach (var flag in requiredFlags)
-        {
-            if (!HasFlag(flag))
-            {
-                return false;
-            }
-        }
-        return true;
+        return currentLocation;
     }
 }

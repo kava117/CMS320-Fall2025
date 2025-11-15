@@ -19,6 +19,6 @@ public class NarrationButtonBehavior : MonoBehaviour
 
     private void ChangeSceneMap()
     {
-        sceneController.ChangeScene("Map", "Narration");
+        sceneController.ChangeSceneMap();
     }
 }
