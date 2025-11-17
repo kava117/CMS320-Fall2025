@@ -6,10 +6,9 @@ using System.Collections.Generic;
 
 public class DialogueManager : MonoBehaviour
 {
-    [SerializeField] private SceneController sceneController;
+    [SerializeField] private SceneLoader sceneLoader;
     [SerializeField] private DialoguePanelUI dialoguePanelUI;
     [SerializeField] private Worldstate worldstate;
-    [SerializeField] private GameObject Portrait;
 
 
 
@@ -38,7 +37,6 @@ public class DialogueManager : MonoBehaviour
 
     private void Awake()
     {
-        Portrait.GameObject().SetActive(false);
         story = new Story(inkJson.text);
     }
 
@@ -156,7 +154,6 @@ public class DialogueManager : MonoBehaviour
                     Debug.Log("hours=" + tagValue);
                     int numHours = int.Parse(tagValue);
                     worldstate.ChangeHoursLeft(-numHours);
-                    dialoguePanelUI.UpdateIcons();
                     break;
                 case JOIN_TAG:
                     Debug.Log("joining=" + tagValue);
@@ -195,6 +192,9 @@ public class DialogueManager : MonoBehaviour
 
         // reset story state
         story.ResetState();
+
+        // load night scene
+        sceneLoader.LoadNight();
     }
 
     

@@ -1,5 +1,33 @@
--> Missouri
+-> Florida
 VAR onScreen = false
+
+=== Florida ===
+Oh, this is bad. #speaker: Player
+This is like, really bad.
+What are you even supposed to do? A giant infectious storm, really?
+You should probably leave, for starters. Yeah, that sounds like a good plan.
+You could find some stuff to bring in your car, too. You don't have much time, by the sound of it - maybe a few hours?
+Food is important, but so is water. Fuel, too. You're pretty sure your landlord has some spare gas hidden somewhere in case the power ever goes out.
+What to pick...
+* [Clean water seems most important. -1 hour] #water:true #hours:1
+  You scramble around your apartment, grabbing as many containers you can to fill with water.
+  You probably have enough time to grab something else... but what?
+  * * [Food should be prioritized. -1 hour] #food:true #hours:1
+  * * [Gas will probably be hard to come by. -1 hour] #gas:true #hours:1
+* [Food should be prioritized. -1 hour] #food:true #hours:1
+  You dig through every cupboard in your apartment, fishing for as much food as you can find.
+  You probably have enough time to grab something else... but what?
+  * * [Clean water seems most important. -1 hour] #water:true #hours:1
+  * * [Gas will probably be hard to come by. -1 hour] #gas:true #hours:1
+* [Gas will probably be hard to come by. -1 hour] #gas:true #hours:1
+  You sneak downstairs, finding the door to the storage room already open. Most of the supplies have already been cleared out, but you find a full jerrycan left.
+  You probably have enough time to grab something else... but what?
+  * * [Clean water seems most important. -1 hour] #water:true #hours:1
+  * * [Food should be prioritized. -1 hour] #food:true #hours:1
+
+--> END
+
+
 
 === Missouri ===
 It's hard to believe the news is real... a giant, infectious storm? That sounds like the plot to some horrible movie. #speaker: Player
@@ -15,12 +43,6 @@ It's hard to believe the news is real... a giant, infectious storm? That sounds 
 * [Food, definitely. (-3 hours)] #food:true #hours:3
 * [Water for sure. (-4 hours)] #water:true #hours:4
 * [Can't get anywhere without gas. (-2 hours)] #gas:true #hours:2
-
---> END
-
-
-
-=== Jane ===
 It's hard to believe the news is real... a giant, infectious storm? That sounds like the plot to some horrible movie. #speaker: Player
 * [What's next, zombies?] #speaker: Player
 * [This whole town is so empty...] #speaker: Player

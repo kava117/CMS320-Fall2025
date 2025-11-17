@@ -21,6 +21,8 @@ public class SceneLoader : MonoBehaviour
     [SerializeField] private Image mapBackground;
     [SerializeField] private Image storm;
     [SerializeField] private Sprite FloridaButton;
+    // NIGHT ui things
+    [SerializeField] private Canvas nightUI;
 
     private int sceneLevel = 0;
     private Sprite backgroundSprite;
@@ -30,12 +32,14 @@ public class SceneLoader : MonoBehaviour
     private void Awake()
     {
         // disables everything from the start for safety
-        Debug.Log("disabling scene on awake");
-        DisableSceneUI();
+        Debug.Log("disabling everything on awake");
+        DisableMapUI();
+        DisableNightUI();
+    }
 
-        Debug.Log("scene laoder: trying to load map");
-        LoadMap();
-        Debug.Log("scene ladoer: laoded map");
+    private void Start()
+    {
+        LoadScene("Florida");
     }
 
     public void LoadDialogueEvent(string locationName)
@@ -62,9 +66,11 @@ public class SceneLoader : MonoBehaviour
         sceneBackground = Resources.Load<Image>($"../Images/Backgrounds/{sceneBackgroundName}");
 
         DisableMapUI(); // disable the map
+        DisableNightUI(); // disable the night
         EnableSceneUI(); // re-enable general ui
 
         LoadDialogueEvent(locationName); // fetch dialogue and load all dialogue ui
+        Debug.Log("scene ladoer: loaded dialogue");
 
 
 
@@ -94,8 +100,43 @@ public class SceneLoader : MonoBehaviour
     {
         // IMPLEMENT LATER: FETCH MOST RECENT CHANGES/AKA THE STORM's MOVEMENT
         Debug.Log("trying ot load map");
-        EnableMapUI(); // gets the map ui showing
+        // turn off everything else
+        DisableSceneUI();
+        DisableNightUI();
+        // gets the map ui showing
+        EnableMapUI(); 
         Debug.Log("loaded map");
+    }
+
+    /**
+     * NIGHT STUFF
+     */
+    public void EnableNightUI()
+    {
+        nightUI.gameObject.SetActive(true);
+    }
+
+    public void DisableNightUI()
+    {
+        nightUI.gameObject.SetActive(false);
+    }
+
+    public void LoadNight()
+    {
+        // IMPLEMENT LATER: FETCH MOST RECENT CHANGES
+        Debug.Log("trying to load night");
+        LoadNightPanels();
+        // turn off everything else first
+        DisableSceneUI();
+        DisableMapUI();
+        // gets night ui showing
+        EnableNightUI();
+        Debug.Log("loaded night");
+    }
+    
+    private void LoadNightPanels()
+    {
+        string[] characters = worldstate.GetPeopleInCar();
 
     }
 }

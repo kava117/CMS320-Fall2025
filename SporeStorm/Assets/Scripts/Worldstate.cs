@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEditor.SpeedTree.Importer;
 using UnityEditor.U2D.Sprites;
 using UnityEngine;
@@ -6,6 +7,7 @@ using UnityEngine;
 public class Worldstate : MonoBehaviour
 {
     public object Instance { get; private set; }
+    [SerializeField] private IconsUI iconsUI;
 
     private string currentLocation; // current "state" the player is in
     private string[] locationHistory = new string[9]; // stores every visited location
@@ -33,7 +35,7 @@ public class Worldstate : MonoBehaviour
         }
 
         locationHistory[0] = "Florida"; // setting first location on startup
-        food = 5;
+        ResetHours();
         water = 5;
         fuel = 5;
     }
@@ -66,6 +68,11 @@ public class Worldstate : MonoBehaviour
         }
     }
 
+    public void ResetHours()
+    {
+        hoursLeft = totalHours;
+    }
+
     public string[] GetPeopleInCar()
     {
         return peopleInCar;
@@ -84,6 +91,7 @@ public class Worldstate : MonoBehaviour
     public void ChangeHoursLeft(int diff)
     {
         hoursLeft -= diff;
+        iconsUI.UpdateIcons();
     }
 
     public double GetFood()
@@ -94,6 +102,7 @@ public class Worldstate : MonoBehaviour
     public void ChangeFood(double diff)
     {
         food += diff;
+        iconsUI.UpdateIcons();
     }
 
     public double GetWater()
@@ -104,6 +113,7 @@ public class Worldstate : MonoBehaviour
     public void ChangeWater(double diff)
     {
         water += diff;
+        iconsUI.UpdateIcons();
     }
 
     public double GetFuel()
@@ -114,5 +124,6 @@ public class Worldstate : MonoBehaviour
     public void ChangeFuel(double diff)
     {
         fuel += diff;
+        iconsUI.UpdateIcons();
     }
 }

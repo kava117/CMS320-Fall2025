@@ -13,23 +13,20 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene("Narration");
     }
 
-    // for loading ""static" scenes, the menu/map/etc
-    public void ChangeSceneMap()
+    // // for loading ""static" scenes, the menu/map/etc
+    // public void ChangeSceneMap()
+    // {
+    //     SceneManager.LoadScene("Playing");
+    // }
+
+    // for loading an event scene
+    public void ChangeScenePlaying()
     {
         SceneManager.LoadScene("Playing");
     }
 
-    // for loading an event scene
-    public void ChangeScenePlaying(string locationName)
+    public void ChangeLocation(string locationName)
     {
-        if (locationName == "Florida")
-        {
-            SceneManager.LoadScene("Playing");
-            sceneLoader.LoadScene(locationName);
-        }
-        else
-        {
-            sceneLoader.LoadScene(locationName);
-        }
+        sceneLoader.LoadScene(locationName);
     }
 }

@@ -21,6 +21,6 @@ public class MapButtonBehavior : MonoBehaviour
     private void ChangeScenePlaying()
     {
         //sceneController.ChangeScenePlaying(button.gameObject.name);
-        sceneController.ChangeScenePlaying(button.gameObject.name);
+        sceneController.ChangeLocation(button.gameObject.name);
     }
 }

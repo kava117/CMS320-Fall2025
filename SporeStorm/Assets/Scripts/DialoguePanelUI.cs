@@ -44,7 +44,6 @@ public class DialoguePanelUI : MonoBehaviour
     private void DialogueStarted()
     {
         contentParent.SetActive(true);
-        UpdateIcons();
     }
 
     private void DialogueFinished()
@@ -108,13 +107,6 @@ public class DialoguePanelUI : MonoBehaviour
     private void ResetPanel()
     {
         dialogueText.text = "";
-    }
-
-    public void UpdateIcons()
-    {
-        gas.text = worldstate.GetFuel() + "";
-        inventory.text = worldstate.GetWater() + "";
-        hours.text = worldstate.GetHoursLeft() + "";
     }
 
 
