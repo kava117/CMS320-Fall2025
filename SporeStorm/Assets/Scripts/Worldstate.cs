@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using UnityEditor.SpeedTree.Importer;
+using UnityEditor.U2D.Sprites;
 using UnityEngine;
 
 public class Worldstate : MonoBehaviour
@@ -15,7 +17,7 @@ public class Worldstate : MonoBehaviour
     private double water;
     private double fuel;
     private int numPeopleInCar;
-    private string[] peopleInCar;
+    private string[] peopleInCar = {"", "", "", ""};
 
 
     private void Awake()
@@ -31,6 +33,9 @@ public class Worldstate : MonoBehaviour
         }
 
         locationHistory[0] = "Florida"; // setting first location on startup
+        food = 5;
+        water = 5;
+        fuel = 5;
     }
 
     public void SetLocation(string newLocation)
@@ -40,8 +45,74 @@ public class Worldstate : MonoBehaviour
         currentLocation = newLocation; 
     }
 
+    public void ChangePeopleInCar(string name)
+    {
+        for (int i = 0; i < 4; i++)
+        {
+            // if the person is in the car, remove them
+            if (name == peopleInCar[i])
+            {
+                peopleInCar[i] = "";
+            }
+        }
+        // else, replace first empty slot with that person
+        for (int i = 0; i < 4; i++)
+        {
+            // if the person is in the car, remove them
+            if (peopleInCar[i] == "")
+            {
+                peopleInCar[i] = name;
+            }
+        }
+    }
+
+    public string[] GetPeopleInCar()
+    {
+        return peopleInCar;
+    }
+
     public string GetLocation()
     {
         return currentLocation;
+    }
+
+    public double GetHoursLeft()
+    {
+        return hoursLeft;
+    }
+
+    public void ChangeHoursLeft(int diff)
+    {
+        hoursLeft -= diff;
+    }
+
+    public double GetFood()
+    {
+        return food;
+    }
+
+    public void ChangeFood(double diff)
+    {
+        food += diff;
+    }
+
+    public double GetWater()
+    {
+        return water;
+    }
+
+    public void ChangeWater(double diff)
+    {
+        water += diff;
+    }
+
+    public double GetFuel()
+    {
+        return fuel;
+    }
+
+    public void ChangeFuel(double diff)
+    {
+        fuel += diff;
     }
 }

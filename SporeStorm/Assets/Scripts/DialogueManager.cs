@@ -1,26 +1,44 @@
 using UnityEngine;
 using Ink.Runtime;
 using Unity.VisualScripting;
+using UnityEngine.SearchService;
+using System.Collections.Generic;
 
 public class DialogueManager : MonoBehaviour
 {
     [SerializeField] private SceneController sceneController;
+    [SerializeField] private DialoguePanelUI dialoguePanelUI;
+    [SerializeField] private Worldstate worldstate;
     [SerializeField] private GameObject Portrait;
+
 
 
     [Header("Ink Story")]
     [SerializeField] private TextAsset inkJson;
 
     private Story story;
+    private string currentCharacter;
 
     private int currentChoiceIndex = -1;
     private int index = 0;
 
     private bool dialoguePlaying = false;
 
+    // TAGS
+    // ui tags
+    private const string SPEAKER_TAG = "speaker";
+    private const string PORTRAIT_TAG = "portrait";
+    // game logic tags
+    private const string HOURS_TAG = "hours";
+    private const string JOIN_TAG = "joining";
+    private const string FOOD_TAG = "food";
+    private const string WATER_TAG = "water";
+    private const string GAS_TAG = "gas";
+
+
     private void Awake()
     {
-        Portrait.SetActive(false);
+        Portrait.GameObject().SetActive(false);
         story = new Story(inkJson.text);
     }
 
@@ -100,14 +118,69 @@ public class DialogueManager : MonoBehaviour
         {
             string dialogueLine = story.Continue();
             GameEventsManager.instance.dialogueEvents.DisplayDialogue(dialogueLine, story.currentChoices);
-
-
-            // for now, just print to console
-            Debug.Log(dialogueLine);
+            // parse and handle tags
+            HandleTags(story.currentTags);
         }
         else if (story.currentChoices.Count == 0)
         {
             ExitDialogue();
+        }
+    }
+
+    private void HandleTags(List<string> currentTags)
+    {
+        // loop thru each tag and handle accordingly
+        foreach (string tag in currentTags)
+        {
+            // parse
+            string[] splitTag = tag.Split(':');
+            if (splitTag.Length != 2)
+            {
+                Debug.LogError("Tag could not be appropriately parsed: " + tag);
+            }
+            string tagKey = splitTag[0].Trim();
+            string tagValue = splitTag[1].Trim();
+
+            // handle the tag
+            switch (tagKey)
+            {
+                case SPEAKER_TAG:
+                    Debug.Log("speaker=" + tagValue);
+                    dialoguePanelUI.SetDialogueName(tagValue);
+                    currentCharacter = tagValue;
+                    break;
+                case PORTRAIT_TAG:
+                    Debug.Log("speaker=" + tagValue);
+                    break;
+                case HOURS_TAG:
+                    Debug.Log("hours=" + tagValue);
+                    int numHours = int.Parse(tagValue);
+                    worldstate.ChangeHoursLeft(-numHours);
+                    dialoguePanelUI.UpdateIcons();
+                    break;
+                case JOIN_TAG:
+                    Debug.Log("joining=" + tagValue);
+                    worldstate.ChangePeopleInCar(currentCharacter);
+                    break;
+                case FOOD_TAG:
+                    Debug.Log("getting food=" + tagValue);
+                    int numFood = int.Parse(tagValue);
+                    worldstate.ChangeFood(numFood);
+                    break;
+                case WATER_TAG:
+                    Debug.Log("getting water=" + tagValue);
+                    int numWater = int.Parse(tagValue);
+                    worldstate.ChangeWater(numWater);
+                    break;
+                case GAS_TAG:
+                    Debug.Log("getting gas=" + tagValue);
+                    //int numGas = int.Parse(tagValue);
+                    worldstate.ChangeFuel(3);
+                    break;
+                default:
+                    Debug.LogWarning("Tag came in but is not currently being handled: " + tag);
+                    break;
+            }
         }
     }
 
@@ -123,4 +196,6 @@ public class DialogueManager : MonoBehaviour
         // reset story state
         story.ResetState();
     }
+
+    
 }
