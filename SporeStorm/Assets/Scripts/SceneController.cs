@@ -3,6 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 
+/*
+ * this class is STRICTLY for changing scenes as in the actual unity object scenes, not
+ * for loading/changing assets. that stuff goes in SceneLoader
+ */
 public class SceneController : MonoBehaviour
 {
     [SerializeField] private SceneLoader sceneLoader;
@@ -12,12 +16,6 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadScene("Narration");
     }
-
-    // // for loading ""static" scenes, the menu/map/etc
-    // public void ChangeSceneMap()
-    // {
-    //     SceneManager.LoadScene("Playing");
-    // }
 
     // for loading an event scene
     public void ChangeScenePlaying()

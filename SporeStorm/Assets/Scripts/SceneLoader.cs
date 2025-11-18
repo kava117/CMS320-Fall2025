@@ -39,13 +39,17 @@ public class SceneLoader : MonoBehaviour
 
     private void Start()
     {
+        // boots up the florida scene, includes images, dialogue, and sound
         LoadScene("Florida");
     }
 
+    // fetches dialogue stuff from the ink manager classes,
+    // also handles booting up the dialogue ui
     public void LoadDialogueEvent(string locationName)
     {
         GameEventsManager.instance.dialogueEvents.EnterDialogue(locationName);
     }
+
 
     /**
      * SCENE STUFF
@@ -62,11 +66,20 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadScene(string locationName)
     {
-        string sceneBackgroundName = locationName + "Background";
-        sceneBackground = Resources.Load<Image>($"../Images/Backgrounds/{sceneBackgroundName}");
-
         DisableMapUI(); // disable the map
         DisableNightUI(); // disable the night
+        /*
+         * BRIANNE AND EMMA, YOUR GUYS' CODE WILL GO HERE.
+         * 
+         * Brianne; you need to load in specific art assets that match a certain scene
+         * so if i pass in the locationName "Missouri", it will load the background
+         * and character portrait for the missouri person
+         * 
+         * Emma; you will write your code in the music/sfx manager you make, but you
+         * should call it right here so it loads on start
+         * (UNLESS you have a different solution, then go ahead and do whatever you
+         * are thinking and if you are not sure just text me)
+         */
         EnableSceneUI(); // re-enable general ui
 
         LoadDialogueEvent(locationName); // fetch dialogue and load all dialogue ui
@@ -74,12 +87,6 @@ public class SceneLoader : MonoBehaviour
 
 
 
-
-        //backgroundSpriteName = worldstate.GetLocation() + "Background";
-        //// find background image
-        //backgroundSprite = Resources.Load<Sprite>($"../Images/Backgrounds/{backgroundSpriteName}");
-        //// attach
-        //Background.sprite = backgroundSprite;
     }
 
 
@@ -98,7 +105,11 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadMap()
     {
-        // IMPLEMENT LATER: FETCH MOST RECENT CHANGES/AKA THE STORM's MOVEMENT
+        /*
+         * Brianne, you will implement the stuff to "update" the map and get the correct
+         * version of it + the storm depending on the day it is (which can be found in
+         * the worldstate class)
+         */
         Debug.Log("trying ot load map");
         // turn off everything else
         DisableSceneUI();
