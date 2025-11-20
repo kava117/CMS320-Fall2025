@@ -80,13 +80,55 @@ public class SceneLoader : MonoBehaviour
          * (UNLESS you have a different solution, then go ahead and do whatever you
          * are thinking and if you are not sure just text me)
          */
+        // BRIANNE'S ART LOADING IMPLEMENTATION
+        LoadSceneAssets(locationName);
         EnableSceneUI(); // re-enable general ui
 
         LoadDialogueEvent(locationName); // fetch dialogue and load all dialogue ui
-        Debug.Log("scene ladoer: loaded dialogue");
+        Debug.Log("scene loader: loaded dialogue");
 
 
 
+    }
+
+    // Loads all visual assets for a specific location scene
+    private void LoadSceneAssets(string locationName)
+    {
+        Debug.Log($"Loading assets for {locationName}");
+        
+        // Load background sprite
+        string backgroundPath = $"Images/Backgrounds/{locationName}Background";
+        Sprite loadedBackground = Resources.Load<Sprite>(backgroundPath);
+        
+        if (loadedBackground != null)
+        {
+            sceneBackground.sprite = loadedBackground;
+            backgroundSprite = loadedBackground;
+            backgroundSpriteName = locationName;
+            Debug.Log($"Successfully loaded background: {backgroundPath}");
+        }
+        else
+        {
+            Debug.LogError($"Failed to load background at path: {backgroundPath}");
+        }
+        
+        /** Load portrait for this location
+        string portraitPath = $"Images/Backgrounds/{locationName}Portrait";
+        Sprite loadedPortrait = Resources.Load<Sprite>(portraitPath);
+        
+        if (loadedPortrait != null)
+        {
+            portraitPanel.sprite = loadedPortrait;
+            Debug.Log($"Successfully loaded portrait: {portraitPath}");
+        }
+        else
+        {
+            Debug.LogError($"Failed to load portrait at path: {portraitPath}");
+        }
+        
+        // Sun, gas, and inventory images stay the same across all scenes
+        // (They should be assigned in the Inspector as they don't change)
+        */
     }
 
 
@@ -111,12 +153,51 @@ public class SceneLoader : MonoBehaviour
          * the worldstate class)
          */
         Debug.Log("trying ot load map");
+
+        // BRIANNE'S MAP LOADING IMPLEMENTATION
+        LoadMapAssets();
         // turn off everything else
         DisableSceneUI();
         DisableNightUI();
         // gets the map ui showing
         EnableMapUI(); 
         Debug.Log("loaded map");
+    }
+
+    // Loads map background and updates storm position based on current day
+    private void LoadMapAssets()
+    {
+        // Load the map background (stays the same)
+        string mapPath = "Images/Map/MapF";
+        Sprite loadedMap = Resources.Load<Sprite>(mapPath);
+        
+        if (loadedMap != null)
+        {
+            mapBackground.sprite = loadedMap;
+            Debug.Log($"Successfully loaded map: {mapPath}");
+        }
+        else
+        {
+            Debug.LogError($"Failed to load map at path: {mapPath}");
+        }
+        
+        // Load the storm sprite based on current day (0-9)
+        int currentDay = worldstate.GetDayNumber();
+        // Clamp the day between 0 and 9 to be safe
+        currentDay = Mathf.Clamp(currentDay, 0, 9);
+        
+        string stormPath = $"Images/Map/Storm({currentDay})";
+        Sprite loadedStorm = Resources.Load<Sprite>(stormPath);
+        
+        if (loadedStorm != null)
+        {
+            storm.sprite = loadedStorm;
+            Debug.Log($"Successfully loaded storm for day {currentDay}: {stormPath}");
+        }
+        else
+        {
+            Debug.LogError($"Failed to load storm at path: {stormPath}");
+        }
     }
 
     /**

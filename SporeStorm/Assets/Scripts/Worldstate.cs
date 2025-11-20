@@ -126,4 +126,8 @@ public class Worldstate : MonoBehaviour
         fuel += diff;
         iconsUI.UpdateIcons();
     }
+     public int GetDayNumber()
+    {
+        return dayNumber;
+    }
 }
