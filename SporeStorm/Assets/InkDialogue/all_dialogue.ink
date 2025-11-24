@@ -70,3 +70,38 @@ It's hard to believe the news is real... a giant, infectious storm? That sounds 
                     * * * * [As you turn around to head back to the car, you think to yourself. Maybe this is bigger than you thought?]
                     -> END
 --> END
+
+===Illinois===
+Never thought I would actually step foot in Illinois but here we are, there's always a first for everything. #speaker: Player 
+Excuse me mister, do you know where I could find the closest gas station?
+Hrmph, I've seen plenty of punks like you coming by here causing all sorts of trouble. *cough cough* Be on your way now. #speaker: Peter
+Please sir, I'm just looking for some supplies to help on my drive. I've come from Florida and I'm only about half way to the bunker. #speaker: Player
+Bunker?!? Don't tell me you beleive in all this alien shit. *cough cough* I've seen plenty of these so called viruses come and go. They haven't gotten me yet so why should I leave? #speaker: Peter
+* [Based off the things I've witnessed myself, I wouldn't be too sure of that. This virus is messing people up bad.]  #speaker: Player
+    Nothing a little *cough cough* medicine can't fix. #speaker: Peter 
+* [Listen I don't blame you, I don't know how much of this I believe either but they're closing down the state lines. Everyone's gotta leave.] #speaker: Player
+    Not me, I'm staying right here with the r- *cough*.. excuse me.. the rest of my farm  #speaker: Peter
+- I hear ya man, but anyway, do you know of any gas stations around here? #speaker: Player
+Not any open within at least 20 minutes, I'll tell ya what though, since I beleive we see eye to eye about most. #speaker: Peter
+How about you follow me up the way to my cabin I'll let ya leave with a few things. 
+* [Thats awfully generous, but I should really get going. Can't get caught in any more traffic.] #speaker: Player 
+    I know that feeling, well feel free to look around the street here. People leave things around all the time. 
+    * [Thank you sir. Are you sure you don't want to hitch a ride to the bunker, I've got more room in the back.] #speaker: Player 
+    So the roads really are that bad? I guess it can't be that bad of an idea.*cough cough* I guess I'll hitch a ride, thanks man. #speaker: Peter
+    * [Continue on the drive.]
+    * [Search the nearby road for left over supplies. -4 Hours] 
+    -> END
+*[That would be incredibly helpful. Anything you could offer would be extremely helpful] #speaker: Player
+    
+
+
+
+->END
+
+
+
+
+
+
+
+
