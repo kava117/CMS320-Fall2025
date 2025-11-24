@@ -82,21 +82,26 @@ Bunker?!? Don't tell me you beleive in all this alien shit. *cough cough* I've s
 * [Listen I don't blame you, I don't know how much of this I believe either but they're closing down the state lines. Everyone's gotta leave.] #speaker: Player
     Not me, I'm staying right here with the r- *cough*.. excuse me.. the rest of my farm  #speaker: Peter
 - I hear ya man, but anyway, do you know of any gas stations around here? #speaker: Player
-Not any open within at least 20 minutes, I'll tell ya what though, since I beleive we see eye to eye about most. #speaker: Peter
+Not any open within at least an hour , I'll tell ya what though, since I beleive we see eye to eye about most. #speaker: Peter
 How about you follow me up the way to my cabin I'll let ya leave with a few things. 
 * [Thats awfully generous, but I should really get going. Can't get caught in any more traffic.] #speaker: Player 
     I know that feeling, well feel free to look around the street here. People leave things around all the time. 
-    * [Thank you sir. Are you sure you don't want to hitch a ride to the bunker, I've got more room in the back.] #speaker: Player 
+    * * [Thank you sir. Are you sure you don't want to hitch a ride to the bunker, I've got more room in the back.] #speaker: Player 
     So the roads really are that bad? I guess it can't be that bad of an idea.*cough cough* I guess I'll hitch a ride, thanks man. #speaker: Peter
-    * [Continue on the drive.]
-    * [Search the nearby road for left over supplies. -4 Hours] 
-    -> END
-*[That would be incredibly helpful. Anything you could offer would be extremely helpful] #speaker: Player
-    
+        * * * [Continue on the drive.]
+        * * * [Search the nearby road for left over supplies. -4 Hours] 
+    * * [ Stay Safe out there, I hope the storm doesn't cause too much hard to your farm.] 
+        - -> END
+*[That would be incredibly helpful. Anything you could offer is great. -4 hours] #speaker: Player #hours: hours -4
+    I figured my supplies aren't doing anyone justince just sitting around here doing nothing. # speaker: Peter
+    * * [Search for food and gas] #food: true #gas: true 
+    * * [Search for gas and water]  #gas: true #water: true 
+    * * [Search for  food and water] #food: true #water: true
+    As much as a pain you young folk are, I wish you the best of luck out there.#speaker: Peter
+    I wouldn't wanna be out on those roads, but more importantly I cant leave my crops out here alone.
+- ->END
 
 
-
-->END
 
 
 
