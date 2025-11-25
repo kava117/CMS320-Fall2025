@@ -459,7 +459,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Storm(5)_0: 6955767079860678095
+      Storm(5)_1: -2271819339151057473
+      Storm(5)_10: -2679339707472238349
+      Storm(5)_11: -5163385340875443453
+      Storm(5)_12: 6822028742418464798
+      Storm(5)_13: 6695608769554964100
+      Storm(5)_2: -9069108982248628777
+      Storm(5)_3: 4950516267843581296
+      Storm(5)_4: 7738789687660127792
+      Storm(5)_5: -9116388494203498975
+      Storm(5)_6: -2884601430698994639
+      Storm(5)_7: -7891541722016104566
+      Storm(5)_8: -2875400780058448449
+      Storm(5)_9: 7121831242321750931
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

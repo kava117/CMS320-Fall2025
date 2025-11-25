@@ -3,8 +3,8 @@ guid: 0e41f56cd92eb4f31b6fa9109cd598a2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6199886327801638459
-    second: apartment_0
+      213: 4871647712535940163
+    second: FloridaBackground_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: apartment_0
+      name: FloridaBackground_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5c11597bb3495f9a0800000000000000
-      internalID: -6199886327801638459
+      spriteID: 34c8c8098c19b9340800000000000000
+      internalID: 4871647712535940163
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      apartment_0: -6199886327801638459
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
