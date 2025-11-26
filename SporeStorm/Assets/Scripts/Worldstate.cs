@@ -35,6 +35,7 @@ public class Worldstate : MonoBehaviour
         }
 
         locationHistory[0] = "Florida"; // setting first location on startup
+        currentLocation = locationHistory[0];
         ResetHours();
         water = 5;
         fuel = 5;
@@ -68,11 +69,13 @@ public class Worldstate : MonoBehaviour
         }
     }
 
+    // once a new day starts
     public void ResetHours()
     {
         hoursLeft = totalHours;
     }
 
+    // five million getters and setters
     public string[] GetPeopleInCar()
     {
         return peopleInCar;
@@ -88,10 +91,15 @@ public class Worldstate : MonoBehaviour
         return hoursLeft;
     }
 
-    public void ChangeHoursLeft(int diff)
+    public bool ChangeHoursLeft(int diff)
     {
+        if (hoursLeft < diff)
+        {
+            return false;
+        }
         hoursLeft -= diff;
         iconsUI.UpdateIcons();
+        return true;
     }
 
     public double GetFood()

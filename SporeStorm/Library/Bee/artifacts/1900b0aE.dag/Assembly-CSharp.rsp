@@ -453,6 +453,8 @@
 "Assets/Scripts/GameEventsManager.cs"
 "Assets/Scripts/IconsUI.cs"
 "Assets/Scripts/MapButtonBehavior.cs"
+"Assets/Scripts/MapContinueButton.cs"
+"Assets/Scripts/MapPanelUI.cs"
 "Assets/Scripts/MusicController.cs"
 "Assets/Scripts/NarrationButtonBehavior.cs"
 "Assets/Scripts/NightPanelUI.cs"

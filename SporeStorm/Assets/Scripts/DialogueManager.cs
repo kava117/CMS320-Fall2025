@@ -156,7 +156,13 @@ public class DialogueManager : MonoBehaviour
                 case HOURS_TAG:
                     Debug.Log("hours=" + tagValue);
                     int numHours = int.Parse(tagValue);
-                    worldstate.ChangeHoursLeft(-numHours);
+                    bool moreTimeLeft = worldstate.ChangeHoursLeft(-numHours);
+                    if (!moreTimeLeft)
+                    {
+                        // if the player runs out of time during the day
+                        ExitDialogue();
+                        EnterDialogue("OutOfTime");
+                    }
                     break;
                 case JOIN_TAG:
                     Debug.Log("joining=" + tagValue);

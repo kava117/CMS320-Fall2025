@@ -10,6 +10,7 @@ public class SceneLoader : MonoBehaviour
     [SerializeField] private Worldstate worldstate;
     [SerializeField] private DialogueManager dialogueManager;
     [SerializeField] private NightPanelUI nightPanelUI;
+    [SerializeField] private MapPanelUI mapPanelUI;
     // SCENE ui things
     [SerializeField] private Canvas sceneUI;
     [SerializeField] private Image sceneBackground;
@@ -157,6 +158,7 @@ public class SceneLoader : MonoBehaviour
 
         // BRIANNE'S MAP LOADING IMPLEMENTATION
         LoadMapAssets();
+        mapPanelUI.LoadMap();
         // turn off everything else
         DisableSceneUI();
         DisableNightUI();

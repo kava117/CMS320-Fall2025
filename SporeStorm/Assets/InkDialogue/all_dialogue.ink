@@ -71,7 +71,7 @@ It's hard to believe the news is real... a giant, infectious storm? That sounds 
                     -> END
 --> END
 
-===Illinois===
+=== Illinois ===
 Never thought I would actually step foot in Illinois but here we are, there's always a first for everything. #speaker: Player 
 Excuse me mister, do you know where I could find the closest gas station?
 Hrmph, I've seen plenty of punks like you coming by here causing all sorts of trouble. *cough cough* Be on your way now. #speaker: Peter
@@ -104,7 +104,10 @@ How about you follow me up the way to my cabin I'll let ya leave with a few thin
 
 
 
+=== OutOfTime ===
+You freeze in place, realizing suddenly that the spores in the air are multiplying at a frightening rate. You've stayed here too long.
 
+--> END
 
 
 
