@@ -457,6 +457,7 @@
 "Assets/Scripts/NarrationButtonBehavior.cs"
 "Assets/Scripts/NightPanelUI.cs"
 "Assets/Scripts/ResourceToggleBehavior.cs"
+"Assets/Scripts/RetryButtonBehavior.cs"
 "Assets/Scripts/SceneController.cs"
 "Assets/Scripts/SceneLoader.cs"
 "Assets/Scripts/SoundController.cs"

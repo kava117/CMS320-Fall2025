@@ -17,6 +17,11 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene("Narration");
     }
 
+    public void ChangeSceneMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
     // for loading an event scene
     public void ChangeScenePlaying()
     {

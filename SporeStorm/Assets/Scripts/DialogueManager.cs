@@ -68,8 +68,10 @@ public class DialogueManager : MonoBehaviour
             {
                 return;
             }
-            
-            ContinueOrExitStory();
+            else if (dialoguePanelUI.GetCanContinueToNextLine())
+            {
+                ContinueOrExitStory();
+            }
         }
     }
 
@@ -124,6 +126,7 @@ public class DialogueManager : MonoBehaviour
             ExitDialogue();
         }
     }
+
 
     private void HandleTags(List<string> currentTags)
     {
