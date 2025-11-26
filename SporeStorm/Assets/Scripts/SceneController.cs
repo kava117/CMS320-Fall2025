@@ -27,4 +27,9 @@ public class SceneController : MonoBehaviour
     {
         sceneLoader.LoadScene(locationName);
     }
+
+    public void GoToMap()
+    {
+        sceneLoader.LoadMap();
+    }
 }

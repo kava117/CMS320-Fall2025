@@ -161,18 +161,18 @@ public class DialogueManager : MonoBehaviour
                     break;
                 case FOOD_TAG:
                     Debug.Log("getting food=" + tagValue);
-                    int numFood = int.Parse(tagValue);
-                    worldstate.ChangeFood(numFood);
+                    //int numFood = int.Parse(tagValue);
+                    //worldstate.ChangeFood(numFood);
                     break;
                 case WATER_TAG:
                     Debug.Log("getting water=" + tagValue);
-                    int numWater = int.Parse(tagValue);
-                    worldstate.ChangeWater(numWater);
+                    //int numWater = int.Parse(tagValue);
+                    //worldstate.ChangeWater(numWater);
                     break;
                 case GAS_TAG:
                     Debug.Log("getting gas=" + tagValue);
                     //int numGas = int.Parse(tagValue);
-                    worldstate.ChangeFuel(3);
+                    //worldstate.ChangeFuel(3);
                     break;
                 default:
                     Debug.LogWarning("Tag came in but is not currently being handled: " + tag);

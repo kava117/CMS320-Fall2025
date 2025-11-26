@@ -9,6 +9,7 @@ public class SceneLoader : MonoBehaviour
     // for fetching game data
     [SerializeField] private Worldstate worldstate;
     [SerializeField] private DialogueManager dialogueManager;
+    [SerializeField] private NightPanelUI nightPanelUI;
     // SCENE ui things
     [SerializeField] private Canvas sceneUI;
     [SerializeField] private Image sceneBackground;
@@ -217,18 +218,12 @@ public class SceneLoader : MonoBehaviour
     {
         // IMPLEMENT LATER: FETCH MOST RECENT CHANGES
         Debug.Log("trying to load night");
-        LoadNightPanels();
+        nightPanelUI.LoadNight();
         // turn off everything else first
         DisableSceneUI();
         DisableMapUI();
         // gets night ui showing
         EnableNightUI();
         Debug.Log("loaded night");
-    }
-    
-    private void LoadNightPanels()
-    {
-        string[] characters = worldstate.GetPeopleInCar();
-
     }
 }
