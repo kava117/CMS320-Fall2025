@@ -1815,6 +1815,7 @@ MonoBehaviour:
   worldstate: {fileID: 91405577}
   dialogueManager: {fileID: 400782237}
   nightPanelUI: {fileID: 678425423}
+  mapPanelUI: {fileID: 0}
   sceneUI: {fileID: 2072203705}
   sceneBackground: {fileID: 1190461541}
   portraitPanel: {fileID: 776217682}
@@ -8240,7 +8241,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2072203702}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 0}
@@ -8779,6 +8780,7 @@ MonoBehaviour:
   worldstate: {fileID: 91405577}
   dialogueManager: {fileID: 400782237}
   nightPanelUI: {fileID: 0}
+  mapPanelUI: {fileID: 0}
   sceneUI: {fileID: 2072203705}
   sceneBackground: {fileID: 1190461541}
   portraitPanel: {fileID: 0}
