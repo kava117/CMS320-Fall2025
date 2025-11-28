@@ -82,7 +82,7 @@ public class SceneLoader : MonoBehaviour
          * (UNLESS you have a different solution, then go ahead and do whatever you
          * are thinking and if you are not sure just text me)
          */
-        // BRIANNE'S ART LOADING IMPLEMENTATION
+        //// BRIANNE'S ART LOADING IMPLEMENTATION
         LoadSceneAssets(locationName);
         EnableSceneUI(); // re-enable general ui
 
