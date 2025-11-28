@@ -88,9 +88,6 @@ public class SceneLoader : MonoBehaviour
 
         LoadDialogueEvent(locationName); // fetch dialogue and load all dialogue ui
         Debug.Log("scene loader: loaded dialogue");
-
-
-
     }
 
     // Loads all visual assets for a specific location scene

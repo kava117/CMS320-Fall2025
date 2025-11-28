@@ -43,9 +43,6 @@ It's hard to believe the news is real... a giant, infectious storm? That sounds 
 * [Food, definitely. (-3 hours)] #food:true #hours:3
 * [Water for sure. (-4 hours)] #water:true #hours:4
 * [Can't get anywhere without gas. (-2 hours)] #gas:true #hours:2
-It's hard to believe the news is real... a giant, infectious storm? That sounds like the plot to some horrible movie. #speaker: Player
-* [What's next, zombies?] #speaker: Player
-* [This whole town is so empty...] #speaker: Player
 - You walk forward more, noticing a lone mechanic waiting outside what appears to be an abandoned garage.
     "What are you still doing here? They sent out the evacuation notice hours ago." #speaker: Jane
     * ["The same could be said about you, y'know."]

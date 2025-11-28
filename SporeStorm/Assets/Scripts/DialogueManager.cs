@@ -26,7 +26,6 @@ public class DialogueManager : MonoBehaviour
     // TAGS
     // ui tags
     private const string SPEAKER_TAG = "speaker";
-    private const string PORTRAIT_TAG = "portrait";
     // game logic tags
     private const string HOURS_TAG = "hours";
     private const string JOIN_TAG = "joining";
@@ -148,10 +147,9 @@ public class DialogueManager : MonoBehaviour
                 case SPEAKER_TAG:
                     Debug.Log("speaker=" + tagValue);
                     dialoguePanelUI.SetDialogueName(tagValue);
+                    Debug.Log("trying to set portrait");
+                    dialoguePanelUI.SetDialoguePortrait(tagValue);
                     currentCharacter = tagValue;
-                    break;
-                case PORTRAIT_TAG:
-                    Debug.Log("speaker=" + tagValue);
                     break;
                 case HOURS_TAG:
                     Debug.Log("hours=" + tagValue);

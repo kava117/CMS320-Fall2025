@@ -119,10 +119,12 @@ public class DialoguePanelUI : MonoBehaviour
         dialogueName.text = Name;
     }
 
-    //private void SetDialoguePortrait(string Name)
-    //{
-    //    dialoguePortrait.sprite = Name;
-    //}
+    public void SetDialoguePortrait(string Name)
+    {
+        string portraitPath = $"Images/Sprites/NPCs/{Name}PortraitDefault";
+        Sprite loadedPortrait = Resources.Load<Sprite>(portraitPath);
+        dialoguePortrait.sprite = loadedPortrait;
+    }
 
     private void ResetPanel()
     {
