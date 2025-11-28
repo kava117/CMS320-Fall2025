@@ -26,7 +26,7 @@ public class SceneLoader : MonoBehaviour
     // NIGHT ui things
     [SerializeField] private Canvas nightUI;
 
-    private int sceneLevel = 0;
+   // private int sceneLevel = 0;
     private Sprite backgroundSprite;
     private string backgroundSpriteName;
 

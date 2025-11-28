@@ -14,12 +14,15 @@ public class SceneController : MonoBehaviour
     // for loading ""static" scenes, the menu/map/etc
     public void ChangeSceneNarration()
     {
+
         SceneManager.LoadScene("Narration");
     }
 
     public void ChangeSceneMainMenu()
-    {
+    {        
+
         SceneManager.LoadScene("MainMenu");
+        SoundController.Instance.PlayMusic(SoundController.Instance.menuSong);
     }
 
     // for loading an event scene

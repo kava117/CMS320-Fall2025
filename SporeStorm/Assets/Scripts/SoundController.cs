@@ -2,24 +2,59 @@ using UnityEngine;
 
 public class SoundController : MonoBehaviour
 {
+    public static SoundController Instance;
+//sources
+    [SerializeField] public AudioSource sfxSource;
+    [SerializeField] public AudioSource musicSource;
 
-    public static SoundController Instance; 
+// sfx
+    public AudioClip clickSound;
+    public AudioClip menuSong;
+    public AudioClip typing;
+    public AudioClip stateMusic;
 
-    [SerializeField] private AudioSource MenuMusic;
-    [SerializeField] private AudioSource Typing; 
 
+ 
 
-    public void PlayMenu(AudioClip clip)
+    private void Awake()
     {
-        MenuMusic.clip = clip;
-        MenuMusic.Play();
+        // Singleton pattern
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
-    public void PlayTyping(AudioClip clip)
+    // --- SFX ---
+    public void PlaySFX(AudioClip clip)
     {
-        Typing.clip = clip;
-        Typing.Play();
+        if (clip != null)
+            sfxSource.PlayOneShot(clip);
     }
 
 
+    public void PlayClick()
+    {
+        PlaySFX(clickSound);
+    }
+
+
+
+    // --- MUSIC ---
+    public void PlayMusic(AudioClip music)
+    {
+        musicSource.clip = music;
+        musicSource.Play();
+       
+    }
+
+    public void StopMusic()
+    {
+        musicSource.Stop();
+    }
 }

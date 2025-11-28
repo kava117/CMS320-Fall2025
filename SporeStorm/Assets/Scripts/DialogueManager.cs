@@ -19,7 +19,7 @@ public class DialogueManager : MonoBehaviour
     private string currentCharacter;
 
     private int currentChoiceIndex = -1;
-    private int index = 0;
+  //  private int index = 0;
 
     private bool dialoguePlaying = false;
 
