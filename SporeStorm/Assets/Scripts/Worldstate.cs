@@ -86,6 +86,11 @@ public class Worldstate : MonoBehaviour
         return currentLocation;
     }
 
+    public string[] GetLocationHistory()
+    {
+        return locationHistory;
+    }
+
     public double GetHoursLeft()
     {
         return hoursLeft;

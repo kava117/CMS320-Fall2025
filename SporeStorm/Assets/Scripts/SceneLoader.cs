@@ -11,6 +11,7 @@ public class SceneLoader : MonoBehaviour
     [SerializeField] private DialogueManager dialogueManager;
     [SerializeField] private NightPanelUI nightPanelUI;
     [SerializeField] private MapPanelUI mapPanelUI;
+    [SerializeField] private GameOverUI gameOverUI;
     // SCENE ui things
     [SerializeField] private Canvas sceneUI;
     [SerializeField] private Image sceneBackground;
@@ -35,6 +36,7 @@ public class SceneLoader : MonoBehaviour
     {
         // disables everything from the start for safety
         Debug.Log("disabling everything on awake");
+        DisableGameOverUI();
         DisableMapUI();
         DisableNightUI();
     }
@@ -68,6 +70,7 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadScene(string locationName)
     {
+        DisableGameOverUI();
         DisableMapUI(); // disable the map
         DisableNightUI(); // disable the night
         /*
@@ -157,6 +160,7 @@ public class SceneLoader : MonoBehaviour
         LoadMapAssets();
         mapPanelUI.LoadMap();
         // turn off everything else
+        DisableGameOverUI();
         DisableSceneUI();
         DisableNightUI();
         // gets the map ui showing
@@ -221,8 +225,31 @@ public class SceneLoader : MonoBehaviour
         // turn off everything else first
         DisableSceneUI();
         DisableMapUI();
+        DisableGameOverUI();
         // gets night ui showing
         EnableNightUI();
         Debug.Log("loaded night");
+    }
+
+    /**
+     * GAME OVER
+     */
+    public void EnableGameOverUI()
+    {
+        gameOverUI.gameObject.SetActive(true);
+    }
+
+    public void DisableGameOverUI()
+    {
+        gameOverUI.gameObject.SetActive(false);
+    }
+
+    public void LoadGameOver()
+    {
+        DisableMapUI();
+        DisableNightUI();
+        DisableSceneUI();
+
+        EnableGameOverUI();
     }
 }

@@ -451,6 +451,7 @@
 "Assets/Scripts/DialogueManager.cs"
 "Assets/Scripts/DialoguePanelUI.cs"
 "Assets/Scripts/GameEventsManager.cs"
+"Assets/Scripts/GameOverUI.cs"
 "Assets/Scripts/IconsUI.cs"
 "Assets/Scripts/MapButtonBehavior.cs"
 "Assets/Scripts/MapContinueButton.cs"
