@@ -20,6 +20,9 @@
 # They also could contain extremely sensitive data
 /[Mm]emoryCaptures/
 
+# Ignore .DS_Store files
+.DS_Store
+
 # Recordings can get excessive in size
 /[Rr]ecordings/
 
