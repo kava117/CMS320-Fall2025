@@ -29,6 +29,7 @@ public class DialogueManager : MonoBehaviour
     // game logic tags
     private const string GAMEOVER_TAG = "gameover";
     private const string JOIN_TAG = "joining"; // only this and the one above matters for playtest
+
     private const string HOURS_TAG = "hours";
     private const string FOOD_TAG = "food";
     private const string WATER_TAG = "water";
@@ -205,8 +206,11 @@ public class DialogueManager : MonoBehaviour
         // reset story state
         story.ResetState();
 
-        // load night scene
-        sceneLoader.LoadNight();
+        //// load night scene
+        //sceneLoader.LoadNight();
+
+        // for playtest purposes, will go straight to map instead
+        sceneLoader.LoadMap();
     }
 
     

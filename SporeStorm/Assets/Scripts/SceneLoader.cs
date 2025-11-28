@@ -11,19 +11,17 @@ public class SceneLoader : MonoBehaviour
     [SerializeField] private DialogueManager dialogueManager;
     [SerializeField] private NightPanelUI nightPanelUI;
     [SerializeField] private MapPanelUI mapPanelUI;
-    [SerializeField] private GameOverUI gameOverUI;
+    [SerializeField] private GameOverUI gameOverPanelUI;
+    // GAMEOVER ui things
+    [SerializeField] private Canvas gameOverUI;
     // SCENE ui things
     [SerializeField] private Canvas sceneUI;
     [SerializeField] private Image sceneBackground;
     [SerializeField] private Image portraitPanel;
-    [SerializeField] private Image sun;
-    [SerializeField] private Image gas;
-    [SerializeField] private Image inventory;
     // MAP ui things
     [SerializeField] private Canvas mapUI;
     [SerializeField] private Image mapBackground;
     [SerializeField] private Image storm;
-    [SerializeField] private Sprite FloridaButton;
     // NIGHT ui things
     [SerializeField] private Canvas nightUI;
 

@@ -34,6 +34,7 @@ public class Worldstate : MonoBehaviour
             Destroy(gameObject);
         }
 
+        dayNumber = 0;
         locationHistory[0] = "Florida"; // setting first location on startup
         currentLocation = locationHistory[0];
         ResetHours();
