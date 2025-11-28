@@ -14,6 +14,8 @@ public class MapPanelUI : MonoBehaviour
     public void LoadMap()
     {
         fuelAmountLeft.text = worldstate.GetFuel() + "";
+
+        // BRIANNE, YOUR STORM CODE GOES HERE
     }
 
     public void ChangeNextLocation(string locationName)
