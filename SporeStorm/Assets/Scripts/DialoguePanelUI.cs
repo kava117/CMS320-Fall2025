@@ -26,6 +26,21 @@ public class DialoguePanelUI : MonoBehaviour
     private Coroutine displayLineCoroutine;
     private bool canContinueToNextLine = false;
 
+
+
+
+    //May be temp (audio stuff)
+    [SerializeField] private AudioSource typingAudioSource;
+    [SerializeField] private AudioClip typingClip;
+
+    [SerializeField] private float typingVolume = 0.5f;
+    [SerializeField] private float typingCooldown = 0.02f;
+
+    private float lastTypingTime = 0f;
+
+
+
+
     private void Awake()
     {
         contentParent.SetActive(false);
@@ -88,6 +103,15 @@ public class DialoguePanelUI : MonoBehaviour
 
         canContinueToNextLine = false;
 
+        //AUDIO STUFF -emma
+        if (typingAudioSource != null && typingClip != null)
+        {
+            typingAudioSource.clip = typingClip;
+            typingAudioSource.loop = false; // VERY important
+            typingAudioSource.Play();
+        }
+
+
         // disaply each letter one at a time
         foreach (char letter in line.ToCharArray())
         {
@@ -99,8 +123,17 @@ public class DialoguePanelUI : MonoBehaviour
             //}
 
             dialogueText.text += letter;
+
+
             yield return new WaitForSeconds(typingSpeed);
         }
+
+        //AUDIO STUFF -emma
+        if (typingAudioSource != null)
+        {
+            typingAudioSource.Stop();
+        }
+
 
         // show items after typing is done
         continueIcon.SetActive(true);

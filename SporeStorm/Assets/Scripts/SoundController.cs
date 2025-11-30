@@ -8,13 +8,24 @@ public class SoundController : MonoBehaviour
     [SerializeField] public AudioSource musicSource;
 
 // sfx
-    public AudioClip clickSound;
     public AudioClip menuSong;
     public AudioClip typing;
     public AudioClip stateMusic;
+    public AudioClip click;
 
 
- 
+    private void Start()
+    {
+        string scene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+
+        if (scene == "MainMenu" || scene == "Narration")
+            PlayMenuSong();
+
+        if (scene == "Playing")
+            PlayBackgroundMusic();
+    }
+
+
 
     private void Awake()
     {
@@ -40,7 +51,7 @@ public class SoundController : MonoBehaviour
 
     public void PlayClick()
     {
-        PlaySFX(clickSound);
+        PlaySFX(click);
     }
 
 
@@ -57,4 +68,26 @@ public class SoundController : MonoBehaviour
     {
         musicSource.Stop();
     }
+
+    public void PlayMenuSong()
+    {
+        if (musicSource.clip != menuSong)
+        {
+            PlayMusic(menuSong);
+        }
+        else if (!musicSource.isPlaying)
+        {
+            musicSource.Play();
+        }
+    }
+
+    public void PlayBackgroundMusic()
+    {
+        PlayMusic(stateMusic);
+    }
+
+
+
+
+
 }

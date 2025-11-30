@@ -19,6 +19,7 @@ public class StartButtonBehavior : MonoBehaviour
 
     private void ChangeSceneNarration()
     {
+        SoundController.Instance.PlayClick();
         sceneController.ChangeSceneNarration();
     }
 }

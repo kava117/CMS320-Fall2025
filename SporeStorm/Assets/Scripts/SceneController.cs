@@ -16,19 +16,22 @@ public class SceneController : MonoBehaviour
     {
 
         SceneManager.LoadScene("Narration");
+        SoundController.Instance.PlayMenuSong();
     }
 
     public void ChangeSceneMainMenu()
     {        
 
         SceneManager.LoadScene("MainMenu");
-        SoundController.Instance.PlayMusic(SoundController.Instance.menuSong);
+        SoundController.Instance.PlayMenuSong();
     }
 
     // for loading an event scene
     public void ChangeScenePlaying()
     {
         SceneManager.LoadScene("Playing");
+        SoundController.Instance.StopMusic();
+        SoundController.Instance.PlayBackgroundMusic();
     }
 
     public void ChangeLocation(string locationName)
