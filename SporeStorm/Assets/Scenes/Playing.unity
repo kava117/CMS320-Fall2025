@@ -1837,7 +1837,7 @@ MonoBehaviour:
   portraitPanel: {fileID: 776217682}
   mapUI: {fileID: 327858795}
   mapBackground: {fileID: 1398659036}
-  storm: {fileID: 0}
+  storm: {fileID: 944316320}
   nightUI: {fileID: 424837278}
 --- !u!1 &491120201
 GameObject:
