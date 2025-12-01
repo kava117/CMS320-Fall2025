@@ -6,6 +6,7 @@ public class MapContinueButton : MonoBehaviour
     [SerializeField] private Button button;
     [SerializeField] private SceneController sceneController;
     [SerializeField] private MapPanelUI mapPanelUI;
+    [SerializeField] private Worldstate worldstate;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
@@ -28,5 +29,7 @@ public class MapContinueButton : MonoBehaviour
         }
         // locks in the user's choice and progresses the game forward
         sceneController.ChangeLocation(nextLocation);
+        worldstate.SetLocation(nextLocation);
+
     }
 }

@@ -4852,6 +4852,7 @@ MonoBehaviour:
   button: {fileID: 1252869761}
   sceneController: {fileID: 41484274}
   mapPanelUI: {fileID: 2055154663}
+  worldstate: {fileID: 91405577}
 --- !u!1 &1258666179
 GameObject:
   m_ObjectHideFlags: 0

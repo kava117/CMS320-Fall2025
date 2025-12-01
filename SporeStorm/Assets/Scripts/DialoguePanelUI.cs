@@ -115,12 +115,12 @@ public class DialoguePanelUI : MonoBehaviour
         // disaply each letter one at a time
         foreach (char letter in line.ToCharArray())
         {
-            //// if the submit button is pressed, finish up displaying early
-            //if (Input.GetKeyDown(KeyCode.Space))
-            //{
-            //    dialogueText.text = line;
-            //    break;
-            //}
+            // if the submit button is pressed, finish up displaying early
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+               dialogueText.text = line;
+               break;
+            }
 
             dialogueText.text += letter;
 

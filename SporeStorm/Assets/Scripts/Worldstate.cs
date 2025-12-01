@@ -44,9 +44,15 @@ public class Worldstate : MonoBehaviour
 
     public void SetLocation(string newLocation)
     {
+        Debug.Log("Worldstate: setting location");
         locationHistory[numPlacesVisited] = newLocation; // adding new visit to location list
         numPlacesVisited++; // incrementing number of visits
         currentLocation = newLocation; 
+
+        Debug.Log("current location history is: ");
+        foreach (string place in locationHistory) {
+            Debug.Log(place);
+        }
     }
 
     public void ChangePeopleInCar(string name)
