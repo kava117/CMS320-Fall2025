@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 912ca655e056f4c10add8943e332f498
+guid: edc49063acc714144a88631374c179a8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5597711781360202899
-    second: WBCarolPortraitDefault_0
+      213: 995480978497335412
+    second: pixel_art_large (4)_0
+  - first:
+      213: 7606535912273010758
+    second: pixel_art_large (4)_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WBCarolPortraitDefault_0
+      name: pixel_art_large (4)_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1024
-        height: 1536
+        x: 359
+        y: 891
+        width: 354
+        height: 354
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d6b8105facee052b0800000000000000
-      internalID: -5597711781360202899
+      spriteID: 470fdf7fca8a0dd00800000000000000
+      internalID: 995480978497335412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel_art_large (4)_1
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 0
+        width: 686
+        height: 825
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 640e84e6c18df8960800000000000000
+      internalID: 7606535912273010758
       vertices: []
       indices: 
       edges: []
@@ -134,8 +159,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      WBCarolPortraitDefault_0: -5597711781360202899
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

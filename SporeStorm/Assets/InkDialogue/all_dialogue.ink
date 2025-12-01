@@ -1,3 +1,4 @@
+-> Mississippi
 
 -> Florida
 VAR onScreen = false
@@ -68,6 +69,66 @@ It's hard to believe the news is real... a giant, infectious storm? That sounds 
                     * * * * [As you turn around to head back to the car, you think to yourself. Maybe this is bigger than you thought?]
                     -> END
 --> END
+
+
+=== Mississippi ===
+#speaker: Player
+I think I see a gas station up there, might be nice to stop for a few more things.
+As you approach the station, it's nearly deserted. Aside from the clerk inside, and a mother and daughter waiting at the door. 
+"Excuse me, is this place even open?"
+#speaker: Laura
+"He's closing the place down now. This whole street has basically been abandoned."
+#speaker: Player
+* ["Wow that was fast"]
+#speaker: Laura
+- "Are you on your way out of town?"
+#speaker: player 
+* ["Yes ma'am, packed up some supplies and hit the road."]
+#speaker: Laura
+- "You seem like a responsible person, may I ask you somehting?"
+#speaker: Player 
+* ["I wouldn't consider myself too responsible."]
+* ["Of course, what do you need?" ]
+#speaker: Laura
+- "My daughter Sasha here, Sasha say hi" 
+#speaker: Player
+Sasha peaks out from hiding behind her mom and waves timidly. 
+#speaker: Laura
+"Unfortuantly I can't take her to the bunker." 
+"I'm.. how do I say this... not on great terms with the law and may not be the best idea for my to show up there." 
+#speaker: Player
+* ["Listen, you seem like a nice person but I'm not in a great place to take care of a child across the country."]
+    #speaker: Laura
+    "I understand, maybe there will be someone else that comes along. Thank you for your time sir." 
+    #speaker: Player 
+    You turn to walk into the gas station, just as the clerk is locking the doors. 
+    Well, guess this is a sign to hit the road. 
+    This is such a strange time, you never really know you can trust. 
+    ->END
+* ["I see, well I can offer her a spot in my car if you would trust that."]
+    #speaker: Laura
+    "Oh goodness, you have no idea what a savior you are." 
+    "Sasha sweetie, this nice person is going to take you to saftey ok?"
+    #speaker: Sasha
+    "Bu-but mom... I don't want to leave you.." 
+    #speaker: Laura
+    "I know love, but I will be there to save you soon ok?"
+    "Take that space book of your's and read that on your way."
+    "Goodbye sweetie, I love you" 
+    #speaker: Player 
+    You watch as she hugs her daughter tightly. Sasha walks over to you with a backpack full of books, she looks slightly dazed.
+    * *  ["Hi Sasha, we are gonna go on a road trip ok!"]
+    -
+    * ["I see you're a big fan of astronauts, do you have any fun facts?"]
+    You know you're not great with kids, but you couldn't imagine leaving her here in these conditions.
+    You open the car door for her and you both continue on the drive.
+    -> END
+    
+
+
+-> END
+
+
 
 === Illinois ===
 Never thought I would actually step foot in Illinois but here we are, there's always a first for everything. #speaker: Player 
@@ -260,10 +321,6 @@ hmm, if I pick this man up I have to drop him off in Idaho. Is it too far out of
         -> END
 
 
-
-
-
-
 * "Of course you can! No man could leave someone stranded out here in this condition." 
     #speaker: Matt
     "Oh man, you have no idea how much of a blessing this is. I don't have much to offer, but I have some food for us to share." #food: true 
@@ -298,11 +355,179 @@ hmm, if I pick this man up I have to drop him off in Idaho. Is it too far out of
 
 
 
+=== SouthDakota === 
+#speaker: Player 
+I thought nothing could get creepier than the last place, but I stand corrected. 
+Oh and would you look at that, just when I thought thing's couldn get scarier, there's an old women on the porch there.
+Let me not be too judgemental. 
+"Excuse me ma'am, do you know about the evacuation."
+#speaker: Carol
+"If I hear one more hippie coming in here running their mouth..."
+#speaker: Player 
+* "That's very rude to say to someone who is just offering to help."
+    #speaker: Caraol
+    "Help with what? This is God's plan all along, im exactly where he wants me to be."
+    #speaker: PLayer
+    "I'm sorry, did you say.... Gods plan?"
+    -> SD1
+    
+    
+* "I come in peace ma'am, I promise I'm just passing through." 
+    #speaker: Carol
+    "Only time I'll have any peace is when this rapture comes and takes me there." 
+    #speaker: Player 
+    "Im sorry, did you say.. rapture?"
+    -> SD1
+=== SD1 ===
+#speaker: Carol
+"Well yes precisley" 
+"Last sunday Pastor John said that soon there would be a sign from God that proves you are exactly where you need to be."
+"And then the following week I hear about this storm spore that's causing a ruckuss. I'll tell you what this is.. it's Gods Rapture!" 
+#speaker: Player 
+* "Ma'am, I think it may be a good idea to take you somewhere safe, I don't think you're thinking clearly." 
+    #speaker: Carol
+    "Oh I am thinking very clearly. In fact, this is probably the clearest I've ever thought in my whole life."
+* "Ok it's official, I think you're the craziest one I've met so far." 
+    #speaker: Carol
+    "You're laughing now, but it wont be funny still when those clouds above you part ways and God's hand is reaching out to save his children." 
+#speaker: Player 
+- "Yeah?"
+#speaker: Carol 
+"I have spent years practicing my religion and that does not stop when the government tell's me to." 
+#speaker: Player 
+* "No one's telling you to stop, but maybe it would be a good idea to go to the bunker so you can meet other people with the same ideas." 
+    #speaker: Carol
+    "Like I said, only god can tell me what to do and you're not him! If god wants me to go to the bunker he would have told me by now."
+    #speaker: Player
+    * * "Funny you say that, God actually just told me he wanted you to come to the bunker with me."
+        #speaker: Carol
+        "Wait.. god told you that?"
+        #speaker: Player
+        "Yeah, it's true! I'm on my way to the bunker now if you'd like to join me there."
+        #speaker: Carol
+        "Well if that's what god wants, that's what is best for me. I shall join you on the rest of the journey."
+        #speaker: PLayer
+        I know this was the right choice, but oh am I in for a long ride....
+        ->END
+    * * "Alright well... if that's what god want's then that's what's gonna happen."
+        "I wish you a good life here at this doorstep, don't drive yourself too mad." 
+        #speaker: Carol
+        "MAD? I'll show you mad" 
+        #speaker: player 
+        You rush back to your car before she can catch up. You drive off knowing that she probably won't be the craziest one you'll meet on this journey..." 
+        ->END
+    
+* "I think you might be a lost cause." 
+#speaker: Carol
+"LOST CAUSE? I'll show you a lost cause."
+#speaker: player 
+You rush back to your car before she can catch up. You drive off knowing that she probably won't be the craziest one you'll meet on this journey..." 
+
+->END
 
 
 
 
-=== OutOfTime ===
+
+
+
+
+=== WyomingWithSasha == 
+#speaker: Player
+"Wow... I've never been to Yellow Stone before. It's quite beautiful actually."
+"Who knew a deadly storm is what would have brought me here..."
+    #speaker: Ezekial 
+    "Hey! You There! Don't come any closer to me with that radio of yours!"
+    "The frequencies are gonna tell them exactly where I am!"
+    #speaker: player
+    "Frequencies? From a damn radio..."
+    #speaker: Ezekial
+    "Well you see, the government has been playing around with this new thing called 5G, they say it's supposed to be the biggest and brightest new thing, but I don't belive it for just one minute." 
+    #speaker: Player
+    * "You sure talk a lot don't you mister."
+    * "I can't believe I ran into another crazy."
+        #speaker: Ezekial
+        "People always say I'm crazy, but I think crazy is exciting. You should've seen the fun my daughter and I had before her mom called me crazy." 
+        #speaker: Player 
+        * * "Oh man, I'm so sorry. That must be very difficult." 
+                    
+            
+                
+        * * "I can see why she said that." 
+            #speaker: Ezekial
+            - "Oh Sasha, if only I could see her one more time before this storm takes us all." 
+            #speaker: Player
+            "Wait did you say Sasha? That's such a coincidence."
+            "I'm taking care of this young girl right now her name is Sasha."
+            You point to the girl in your backseat, here eyes are just barely visible out the window when you see her face light up.
+            #speaker: Ezekial
+            "This can't be real! How did you manage to find my daughter! She lives with her mother in Mississippi."
+            #speaker: Player 
+            * "How can you be sure that's your daughter?"
+                -> W1
+            * "Mississipi you say? That's exactly where her mother left her with me." 
+                -> W1
+            === W1 ===
+            #speaker: Ezekial 
+            "I know those eyes from anywhere, she looks just like her mother." 
+            #speaker: Player 
+            you watch as Sasha rushes from the car and jumps into her fathers arms.
+            #speaker: Ezekial
+            "Oh sasha dear how I've missed you, all these adventures I've had to go on without you!"
+            #speaker: Player 
+            * "If this is true, you must come with us to the bunker with your daughter."
+                #speaker: Ezekial
+                "Oh this is the happiest day of my life! I'm reunited with my sweet girl and saved by this random person with their toxic radio box." 
+                #speaker: Player
+                "Ok well, you have to get in my so-called toxic radio box if we are going to make it to saftey." 
+                You watch as Ezekial picks up Sasha and rushes her to the backseat. 
+                Guess I have another passenger...
+                ->END
+            * "I'm sorry to break up this special moment, but I was given special instructions by her mother to take her to saftey, I can't let her down now." 
+                #speaker: Ezekial
+                "I understand, I only want what's best for her. I know that's where she'll be the safest." 
+                "Not for me though! I must stay here where the signals can't reach me!" 
+                "Goodbye Sasha and random person I just met!"
+                #speaker: Player
+                You watch as Ezekial hugs his daughter tightly before rushing back to his tent. 
+                What a strange world we live in, you think to yourself as you walk Sasha back to the car.
+                -> END
+            
+    
+    -> END
+
+=== WyomingWithoutSasha === 
+#speaker: Player
+"Wow... I've never been to Yellow Stone before. It's quite beautiful actually."
+"Who knew a deadly storm is what would have brought me here..."
+    #speaker: Player
+    "I can't imagine anyone being at a state park during a government shutdown." 
+    * "A little walk through the park never hurt anyone, might be good to get some fresh air."
+        You take a walk through the park
+        As you lose track of time... you notice the storm approaching at a steady speed. 
+        You turn around... which path did you take... left... or right...
+        ->Death
+    * "It's probably best to not stop for long."
+        "Maybe I can pick up some food from that vending machine over there." 
+        -> END
+ 
+
+-> END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=== Death ===
 You freeze in place, realizing suddenly that the spores in the air are multiplying at a frightening rate. You've stayed here too long.
 
 --> END

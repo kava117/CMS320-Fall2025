@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      WBShaunPortraitDefault_0: -2431429757024854742
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

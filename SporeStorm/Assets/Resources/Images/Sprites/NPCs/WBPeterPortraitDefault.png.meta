@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      WBPeterPortraitDefault_0: -3469432322080023319
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

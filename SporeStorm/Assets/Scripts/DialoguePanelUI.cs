@@ -96,6 +96,10 @@ public class DialoguePanelUI : MonoBehaviour
 
     private IEnumerator DisplayLine(string line, List<Choice> dialogueChoices)
     {
+                Debug.Log("Decreasing typing speed");
+        typingSpeed = 0.04f;
+
+
         // empty the dialogue text
         dialogueText.text = "";
         // hide items while text is typing
@@ -107,7 +111,7 @@ public class DialoguePanelUI : MonoBehaviour
         if (typingAudioSource != null && typingClip != null)
         {
             typingAudioSource.clip = typingClip;
-            typingAudioSource.loop = false; // VERY important
+            typingAudioSource.loop = false; 
             typingAudioSource.Play();
         }
 
@@ -116,10 +120,11 @@ public class DialoguePanelUI : MonoBehaviour
         foreach (char letter in line.ToCharArray())
         {
             // if the submit button is pressed, finish up displaying early
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.Space) && !canContinueToNextLine)
             {
-               dialogueText.text = line;
-               break;
+                Debug.Log("Increasing Typing Speed");
+                typingSpeed = .0001f;
+                //typingSpeed= 0.04f;
             }
 
             dialogueText.text += letter;

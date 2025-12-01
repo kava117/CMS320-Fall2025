@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      WBConnorPortraitDefault_0: 909649608649738139
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      WBJanePortraitDefault_0: 1420397472215752692
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

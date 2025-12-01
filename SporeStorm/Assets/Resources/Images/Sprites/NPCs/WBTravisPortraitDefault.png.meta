@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      WBTravisPortraitDefault_0: -6356023201466102142
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
