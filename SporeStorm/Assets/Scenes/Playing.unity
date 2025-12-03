@@ -2084,7 +2084,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2050717287309653389, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Name
-      value: South Dakota
+      value: SouthDakota
       objectReference: {fileID: 0}
     - target: {fileID: 2090535569118253050, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_text
@@ -8905,7 +8905,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2050717287309653389, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Name
-      value: North Dakota
+      value: NorthDakota
       objectReference: {fileID: 0}
     - target: {fileID: 2090535569118253050, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_text
