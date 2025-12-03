@@ -28,12 +28,14 @@ public class DialogueManager : MonoBehaviour
     private const string SPEAKER_TAG = "speaker";
     // game logic tags
     private const string GAMEOVER_TAG = "gameover";
-    private const string JOIN_TAG = "joining"; // only this and the one above matters for playtest
+    private const string GAMEWIN_TAG = "gamewin";
+    private const string JOIN_TAG = "joining"; // only this and the ones above matters for playtest
 
     private const string HOURS_TAG = "hours";
     private const string FOOD_TAG = "food";
     private const string WATER_TAG = "water";
     private const string GAS_TAG = "gas";
+
 
 
     private void Awake()
@@ -167,6 +169,10 @@ public class DialogueManager : MonoBehaviour
                 case GAMEOVER_TAG:
                     Debug.Log("gameover=" + tagValue);
                     sceneLoader.LoadGameOver();
+                    break;
+                case GAMEWIN_TAG:
+                    Debug.Log("gamewin=" + tagValue);
+                    sceneLoader.LoadGameWin();
                     break;
                 case JOIN_TAG:
                     Debug.Log("joining=" + tagValue);

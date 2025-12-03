@@ -14,6 +14,8 @@ public class SceneLoader : MonoBehaviour
     [SerializeField] private GameOverUI gameOverPanelUI;
     // GAMEOVER ui things
     [SerializeField] private Canvas gameOverUI;
+    // GAMEWIN ui things
+    [SerializeField] private Canvas gameWinUI;
     // SCENE ui things
     [SerializeField] private Canvas sceneUI;
     [SerializeField] private Image sceneBackground;
@@ -69,20 +71,9 @@ public class SceneLoader : MonoBehaviour
     public void LoadScene(string locationName)
     {
         DisableGameOverUI();
+        DisableGameWinUI();
         DisableMapUI(); // disable the map
         DisableNightUI(); // disable the night
-        /*
-         * BRIANNE AND EMMA, YOUR GUYS' CODE WILL GO HERE.
-         * 
-         * Brianne; you need to load in specific art assets that match a certain scene
-         * so if i pass in the locationName "Missouri", it will load the background
-         * and character portrait for the missouri person
-         * 
-         * Emma; you will write your code in the music/sfx manager you make, but you
-         * should call it right here so it loads on start
-         * (UNLESS you have a different solution, then go ahead and do whatever you
-         * are thinking and if you are not sure just text me)
-         */
         //// BRIANNE'S ART LOADING IMPLEMENTATION
         LoadSceneAssets(locationName);
         EnableSceneUI(); // re-enable general ui
@@ -111,24 +102,6 @@ public class SceneLoader : MonoBehaviour
         {
             Debug.LogError($"Failed to load background at path: {backgroundPath}");
         }
-        
-        /** Load portrait for this location
-        string portraitPath = $"Images/Backgrounds/{locationName}Portrait";
-        Sprite loadedPortrait = Resources.Load<Sprite>(portraitPath);
-        
-        if (loadedPortrait != null)
-        {
-            portraitPanel.sprite = loadedPortrait;
-            Debug.Log($"Successfully loaded portrait: {portraitPath}");
-        }
-        else
-        {
-            Debug.LogError($"Failed to load portrait at path: {portraitPath}");
-        }
-        
-        // Sun, gas, and inventory images stay the same across all scenes
-        // (They should be assigned in the Inspector as they don't change)
-        */
     }
 
 
@@ -147,17 +120,13 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadMap()
     {
-        /*
-         * Brianne, you will implement the stuff to "update" the map and get the correct
-         * version of it + the storm depending on the day it is (which can be found in
-         * the worldstate class)
-         */
         Debug.Log("trying ot load map");
 
         // BRIANNE'S MAP LOADING IMPLEMENTATION
         LoadMapAssets();
         mapPanelUI.LoadMap();
         // turn off everything else
+        DisableGameWinUI();
         DisableGameOverUI();
         DisableSceneUI();
         DisableNightUI();
@@ -221,6 +190,7 @@ public class SceneLoader : MonoBehaviour
         Debug.Log("trying to load night");
         nightPanelUI.LoadNight();
         // turn off everything else first
+        DisableGameWinUI();
         DisableSceneUI();
         DisableMapUI();
         DisableGameOverUI();
@@ -247,7 +217,32 @@ public class SceneLoader : MonoBehaviour
         DisableMapUI();
         DisableNightUI();
         DisableSceneUI();
+        DisableGameWinUI();
 
         EnableGameOverUI();
+    }
+
+
+    /**
+     * GAME WIN
+     */
+    public void EnableGameWinUI()
+    {
+        gameWinUI.gameObject.SetActive(true);
+    }
+
+    public void DisableGameWinUI()
+    {
+        gameWinUI.gameObject.SetActive(false);
+    }
+
+    public void LoadGameWin()
+    {
+        DisableMapUI();
+        DisableNightUI();
+        DisableSceneUI();
+        DisableGameOverUI();
+
+        EnableGameWinUI();
     }
 }

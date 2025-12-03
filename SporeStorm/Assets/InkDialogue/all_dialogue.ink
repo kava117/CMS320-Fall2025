@@ -744,7 +744,7 @@ It's crazy to think I just drove across the whole country.
 I ran into so many strange people...
 You aproach the gate agent, he informs you to park in the field, leave anything except water, food, and medication, and make your way to the elevators.
 You take a deep breath and realize... you survived.
-For now. 
+For now. #gamewin: true
 ->END
 
 
@@ -762,7 +762,7 @@ As you approcah the bus stop, you see a teenage boy sitting on the bench smoking
 
 - "Can't a guy catch a break and smoke in peace." #speaker: Connor
 * ["You really shouldn't be smoking, kill's your lungs."] #speaker: Player
-* ["If you wan't me to leave you be you can say it nicely."] #speaker: Player
+* ["If you want me to leave you be you can say it nicely."] #speaker: Player
 
 - "Alright, then why are you still here?" #speaker: Connor
 
@@ -853,7 +853,7 @@ I ran into so many strange people...
 Wait... there's actually a guard over here.
 You aproach the gate agent, he informs leave anything except water, food, and medication, and make your way to the elevators.
 You take a deep breath and realize... you survived.
-For now. 
+For now. #gamewin: true
 ->END
 
 

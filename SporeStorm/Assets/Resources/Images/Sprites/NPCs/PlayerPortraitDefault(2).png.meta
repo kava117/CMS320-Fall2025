@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: edc49063acc714144a88631374c179a8
+guid: e2eb409176889f642aa5ac09acd90568
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 995480978497335412
-    second: pixel_art_large (4)_0
-  - first:
-      213: 7606535912273010758
-    second: pixel_art_large (4)_1
+      213: 535421381129604333
+    second: PlayerPortraitDefault(2)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,35 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pixel_art_large (4)_0
+      name: PlayerPortraitDefault(2)_0
       rect:
         serializedVersion: 2
-        x: 359
-        y: 891
-        width: 354
-        height: 354
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 470fdf7fca8a0dd00800000000000000
-      internalID: 995480978497335412
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixel_art_large (4)_1
-      rect:
-        serializedVersion: 2
-        x: 187
+        x: 0
         y: 0
-        width: 686
-        height: 825
+        width: 899
+        height: 1501
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 640e84e6c18df8960800000000000000
-      internalID: 7606535912273010758
+      spriteID: dec016bc8e23e6700800000000000000
+      internalID: 535421381129604333
       vertices: []
       indices: 
       edges: []
@@ -150,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -159,9 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      pixel_art_large (4)_0: 995480978497335412
-      pixel_art_large (4)_1: 7606535912273010758
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
