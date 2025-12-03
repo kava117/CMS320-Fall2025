@@ -1,9 +1,11 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using Ink.Runtime;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem.Android;
 using UnityEngine.UI;
 
 public class DialoguePanelUI : MonoBehaviour
@@ -25,6 +27,8 @@ public class DialoguePanelUI : MonoBehaviour
     private float typingSpeed = 0.04F;
     private Coroutine displayLineCoroutine;
     private bool canContinueToNextLine = false;
+    private bool spaceDown = false;
+    private int counter = 0;
 
 
 
@@ -45,6 +49,14 @@ public class DialoguePanelUI : MonoBehaviour
     {
         contentParent.SetActive(false);
         ResetPanel();
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space) && counter >= 10)
+        {
+            spaceDown = true;
+        }
     }
 
     private void OnEnable()
@@ -96,7 +108,8 @@ public class DialoguePanelUI : MonoBehaviour
 
     private IEnumerator DisplayLine(string line, List<Choice> dialogueChoices)
     {
-                Debug.Log("Decreasing typing speed");
+        counter = 0;
+        Debug.Log("Decreasing typing speed");
         typingSpeed = 0.04f;
 
 
@@ -116,19 +129,19 @@ public class DialoguePanelUI : MonoBehaviour
         }
 
 
-        // disaply each letter one at a time
-        foreach (char letter in line.ToCharArray())
+        char[] lineInChars = line.ToCharArray();
+
+        for (int i = 0; i < lineInChars.Length; i++)
         {
-            // if the submit button is pressed, finish up displaying early
-            if (Input.GetKeyDown(KeyCode.Space) && !canContinueToNextLine)
+            counter++;
+            dialogueText.text += lineInChars[i];
+
+            if (spaceDown)
             {
+                spaceDown = false;
                 Debug.Log("Increasing Typing Speed");
-                typingSpeed = .0001f;
-                //typingSpeed= 0.04f;
+                typingSpeed = .00001f;
             }
-
-            dialogueText.text += letter;
-
 
             yield return new WaitForSeconds(typingSpeed);
         }
@@ -198,5 +211,23 @@ public class DialoguePanelUI : MonoBehaviour
         {
             choiceButton.gameObject.SetActive(false);
         }
+    }
+
+    private void HaltCoroutine(List<Choice> dialogueChoices)
+    {
+
+
+        //AUDIO STUFF -emma
+        if (typingAudioSource != null)
+        {
+            typingAudioSource.Stop();
+        }
+
+
+        // show items after typing is done
+        continueIcon.SetActive(true);
+        DisplayChoices(dialogueChoices);
+
+        canContinueToNextLine = true;
     }
 }

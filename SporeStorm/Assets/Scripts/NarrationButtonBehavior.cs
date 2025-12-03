@@ -17,6 +17,14 @@ public class NarrationButtonBehavior : MonoBehaviour
         button.onClick.RemoveListener(ChangeScenePlaying);
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            ChangeScenePlaying();
+        }
+    }
+
     private void ChangeScenePlaying()
     {
         SoundController.Instance.PlayClick();
