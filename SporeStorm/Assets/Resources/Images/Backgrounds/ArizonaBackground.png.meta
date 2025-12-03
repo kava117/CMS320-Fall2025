@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ArizonaBackground_0: 7553444489946800013
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

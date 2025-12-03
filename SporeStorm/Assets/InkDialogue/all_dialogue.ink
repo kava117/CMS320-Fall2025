@@ -14,21 +14,21 @@ You should probably leave, for starters. Yeah, that sounds like a good plan.
 You could find some stuff to bring in your car, too. You don't have much time, by the sound of it - maybe a few hours?
 Food is important, but so is water. Fuel, too. You're pretty sure your landlord has some spare gas hidden somewhere in case the power ever goes out.
 What to pick...
-* [Clean water seems most important. -1 hour] #water:true #hours:1
+* [Clean water seems most important.] #water:true #hours:1
   You scramble around your apartment, grabbing as many containers you can to fill with water.
   You probably have enough time to grab something else... but what?
-  * * [Food should be prioritized. -1 hour] #food:true #hours:1
-  * * [Gas will probably be hard to come by. -1 hour] #gas:true #hours:1
-* [Food should be prioritized. -1 hour] #food:true #hours:1
+  * * [Food should be prioritized.] #food:true #hours:1
+  * * [Gas will probably be hard to come by.] #gas:true #hours:1
+* [Food should be prioritized.] #food:true #hours:1
   You dig through every cupboard in your apartment, fishing for as much food as you can find.
   You probably have enough time to grab something else... but what?
-  * * [Clean water seems most important. -1 hour] #water:true #hours:1
-  * * [Gas will probably be hard to come by. -1 hour] #gas:true #hours:1
-* [Gas will probably be hard to come by. -1 hour] #gas:true #hours:1
+  * * [Clean water seems most important.] #water:true #hours:1
+  * * [Gas will probably be hard to come by. ] #gas:true #hours:1
+* [Gas will probably be hard to come by. ] #gas:true #hours:1
   You sneak downstairs, finding the door to the storage room already open. Most of the supplies have already been cleared out, but you find a full jerrycan left.
   You probably have enough time to grab something else... but what?
-  * * [Clean water seems most important. -1 hour] #water:true #hours:1
-  * * [Food should be prioritized. -1 hour] #food:true #hours:1
+  * * [Clean water seems most important. ] #water:true #hours:1
+  * * [Food should be prioritized. ] #food:true #hours:1
 
 --> END
 
@@ -110,8 +110,8 @@ Sasha peaks out from hiding behind her mom and waves timidly. #speaker: Player
     "Bu-but mom... I don't want to leave you.."  #speaker: Sasha
     "I know love, but I will be there to save you soon ok?" #speaker: Laura
     "Take that space book of your's and read that on your way."
-    "Goodbye sweetie, I love you"  #joining: true
-    ~hasSasha = true
+    "Goodbye sweetie, I love you"  #joining: true #hasSasha: true
+    
     You watch as she hugs her daughter tightly. Sasha walks over to you with a backpack full of books, she looks slightly dazed.#speaker: Player
     * * [ "Hi Sasha, we are gonna go on a road trip ok!"] #speaker: Player
     -
@@ -508,14 +508,6 @@ You rush back to your car before she can catch up. You drive off knowing that sh
 
 
 
-=== Wyoming ===
-{ hasSasha: 
--> WyomingWithSasha
- - else: 
- -> WyomingWithoutSasha
- 
-}
-
 
 
 
@@ -594,8 +586,8 @@ Who knew a deadly storm is what would have brought me here...
 
                 * * ["Ok well, you have to get in my so-called toxic radio box if we are going to make it to saftey." ]
                 -
-                You watch as Ezekial picks up Sasha and rushes her to the backseat. 
-                ~ hasAccess = true
+                You watch as Ezekial picks up Sasha and rushes her to the backseat. #hasAccess: true
+            
                 Guess I have another passenger... 
                 ->END
             * ["I'm sorry to break up this special moment, but I was given special instructions by her mother to take her to saftey, I can't let her down now." ]
@@ -612,7 +604,7 @@ Who knew a deadly storm is what would have brought me here...
             
 
 
-=== WyomingWithoutSasha === 
+=== Wyoming === 
 
 * ["Wow... I've never been to Yellow Stone before. It's quite beautiful actually."]#speaker: Player
 
@@ -831,13 +823,7 @@ He almost acts exactly how I did at that age.
 
 
 
-=== Arizona ===
-{ hasAccess: 
--> ArizonaWithAccess
- - else: 
- -> ArizonaWithoutAccess
- 
-}
+
 
 === ArizonaWithAccess    ===
 "Just park up here to the left, we can walk to where we need to go." #speaker: Ezekial  
@@ -860,7 +846,7 @@ For now. #gamewin: true
 
 ->END
 
-===ArizonaWithoutAccess===
+===Arizona===
 Wait a minute, is this... Arizona?? #speaker: Player 
 I've gone completly out of the way. 
 This isn't good at all. 

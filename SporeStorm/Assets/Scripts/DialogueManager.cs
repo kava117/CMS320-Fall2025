@@ -14,6 +14,10 @@ public class DialogueManager : MonoBehaviour
 
     [Header("Ink Story")]
     [SerializeField] private TextAsset inkJson;
+    [SerializeField] public bool hasSasha = false;
+    [SerializeField] public bool hasAccess = false;
+
+
 
     private Story story;
     private string currentCharacter;
@@ -96,7 +100,17 @@ public class DialogueManager : MonoBehaviour
         // jump to the knot
         if (!knotName.Equals(""))
         {
-            story.ChoosePathString(knotName);
+            if( knotName == "Wyoming" && hasSasha == true ){
+                knotName = "WyomingWithSasha";
+                story.ChoosePathString(knotName);
+            } else if( knotName == "Arizona" && hasAccess == true){
+                knotName = "ArizonaWithAccess";
+                story.ChoosePathString(knotName);
+            }
+            else{ 
+                story.ChoosePathString(knotName);
+            } 
+
         }
         else
         {
@@ -193,6 +207,16 @@ public class DialogueManager : MonoBehaviour
                     //int numGas = int.Parse(tagValue);
                     //worldstate.ChangeFuel(3);
                     break;
+                case "hasSasha":
+                    Debug.Log("hasSasha=" + tagValue);
+                    hasSasha = bool.Parse(tagValue);
+                    break;
+                case "hasAccess":
+                    Debug.Log("hasAccess=" + tagValue);
+                    hasAccess = bool.Parse(tagValue);
+                    break;
+
+
                 default:
                     Debug.LogWarning("Tag came in but is not currently being handled: " + tag);
                     break;
