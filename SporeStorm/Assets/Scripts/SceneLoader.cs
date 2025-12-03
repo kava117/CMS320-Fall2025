@@ -153,17 +153,19 @@ public class SceneLoader : MonoBehaviour
         }
         
         // Load the storm sprite based on current day (0-9)
-        int currentDay = worldstate.GetDayNumber();
+        //int locationsVisited = worldstate.GetLocationHistory().Length;
         // Clamp the day between 0 and 9 to be safe
-        currentDay = Mathf.Clamp(currentDay, 0, 9);
-        
-        string stormPath = $"Images/Map/Storm({currentDay})";
+        //int dayCurrent = Mathf.Clamp(locationsVisited, 0, 9) + 1;
+        int locationsVisited = worldstate.GetLocationsVisited() * 2;
+
+
+        string stormPath = $"Images/Map/Storm({locationsVisited})";
         Sprite loadedStorm = Resources.Load<Sprite>(stormPath);
         
         if (loadedStorm != null)
         {
             storm.sprite = loadedStorm;
-            Debug.Log($"Successfully loaded storm for day {currentDay}: {stormPath}");
+            Debug.Log($"Successfully loaded storm for day {locationsVisited}: {stormPath}");
         }
         else
         {

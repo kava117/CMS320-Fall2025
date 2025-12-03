@@ -16,6 +16,8 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private TextAsset inkJson;
     [SerializeField] public bool hasSasha = false;
     [SerializeField] public bool hasAccess = false;
+    [SerializeField] public bool idahoFam = false; 
+
 
 
 
@@ -106,6 +108,10 @@ public class DialogueManager : MonoBehaviour
             } else if( knotName == "Arizona" && hasAccess == true){
                 knotName = "ArizonaWithAccess";
                 story.ChoosePathString(knotName);
+            }else if( knotName == "Idaho" && idahoFam == true){
+                knotName = "IdahoWithFam";
+                story.ChoosePathString(knotName); 
+
             }
             else{ 
                 story.ChoosePathString(knotName);
@@ -214,6 +220,10 @@ public class DialogueManager : MonoBehaviour
                 case "hasAccess":
                     Debug.Log("hasAccess=" + tagValue);
                     hasAccess = bool.Parse(tagValue);
+                    break;
+                case "idahoFam":
+                    Debug.Log("idahoFam="+ tagValue);
+                    idahoFam = bool.Parse(tagValue);
                     break;
 
 

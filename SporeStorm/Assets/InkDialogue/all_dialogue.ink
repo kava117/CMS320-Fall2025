@@ -259,7 +259,7 @@ hmm, if I pick this man up I have to drop him off in Idaho. Is it too far out of
 
 * ["Of course you can! No man could leave someone stranded out here in this condition."]#speaker: Player 
 
-    "Oh man, you have no idea how much of a blessing this is. I don't have much to offer, but I have some food for us to share."     #speaker: Matt
+    "Oh man, you have no idea how much of a blessing this is. I don't have much to offer, but I have some food for us to share."     #speaker: Matt  #idahoFam: true
 
 
     * * ["Anything you have would be of help, thank you."]#speaker: Player 
@@ -740,6 +740,13 @@ For now. #gamewin: true
 ->END
 
 
+
+
+=== IdahoWithFam ===
+"Thank you so much, you have no idea how much this means to me." #speaker: Matt
+* ["No problem man, enjoy this time with your family and stay safe out there."] #speaker: Player 
+
+->Idaho
 
 
 

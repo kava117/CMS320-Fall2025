@@ -27,6 +27,10 @@ public class MapContinueButton : MonoBehaviour
         {
             return;
         }
+        else if (nextLocation == worldstate.GetLocation()) 
+        {
+            return;
+        }
         // locks in the user's choice and progresses the game forward
         sceneController.ChangeLocation(nextLocation);
         worldstate.SetLocation(nextLocation);

@@ -83,6 +83,13 @@ public class Worldstate : MonoBehaviour
     }
 
     // five million getters and setters
+    public int GetLocationsVisited()
+    {
+        return numPlacesVisited;
+    }
+
+
+
     public string[] GetPeopleInCar()
     {
         return peopleInCar;
