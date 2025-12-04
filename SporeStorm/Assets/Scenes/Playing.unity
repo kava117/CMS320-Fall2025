@@ -285,6 +285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneController
   sceneLoader: {fileID: 450093219}
+  worldstate: {fileID: 0}
 --- !u!4 &41484275
 Transform:
   m_ObjectHideFlags: 0
@@ -1865,6 +1866,9 @@ MonoBehaviour:
   dialoguePanelUI: {fileID: 1566718259}
   worldstate: {fileID: 91405577}
   inkJson: {fileID: 4900000, guid: 27df8952ddb7d1449b97569a81e65dfe, type: 3}
+  hasSasha: 0
+  hasAccess: 0
+  idahoFam: 0
 --- !u!4 &400782238
 Transform:
   m_ObjectHideFlags: 0
@@ -2079,6 +2083,7 @@ MonoBehaviour:
   mapBackground: {fileID: 1398659036}
   storm: {fileID: 944316320}
   nightUI: {fileID: 424837278}
+  creditsUI: {fileID: 0}
 --- !u!1 &491120201
 GameObject:
   m_ObjectHideFlags: 0

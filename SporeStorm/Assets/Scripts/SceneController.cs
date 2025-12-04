@@ -10,6 +10,7 @@ using UnityEngine.SceneManagement;
 public class SceneController : MonoBehaviour
 {
     [SerializeField] private SceneLoader sceneLoader;
+    [SerializeField] private Worldstate worldstate;
 
     // for loading ""static" scenes, the menu/map/etc
     public void ChangeSceneNarration()
@@ -20,8 +21,8 @@ public class SceneController : MonoBehaviour
     }
 
     public void ChangeSceneMainMenu()
-    {        
-
+    {
+        worldstate.ResetData();
         SceneManager.LoadScene("MainMenu");
         SoundController.Instance.PlayMenuSong();
     }

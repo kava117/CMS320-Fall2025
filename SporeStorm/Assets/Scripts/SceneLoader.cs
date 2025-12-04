@@ -26,6 +26,8 @@ public class SceneLoader : MonoBehaviour
     [SerializeField] private Image storm;
     // NIGHT ui things
     [SerializeField] private Canvas nightUI;
+    // CREDITS ui things
+    [SerializeField] private Canvas creditsUI;
 
    // private int sceneLevel = 0;
     private Sprite backgroundSprite;
@@ -265,5 +267,20 @@ public class SceneLoader : MonoBehaviour
         DisableGameOverUI();
 
         EnableGameWinUI();
+    }
+
+
+
+    /**
+     * MAIN MENU CREDITS
+     */
+    public void EnableCreditsUI()
+    {
+        creditsUI.gameObject.SetActive(true);
+    }
+
+    public void DisableCreditsUI()
+    {
+        creditsUI.gameObject.SetActive(false);
     }
 }

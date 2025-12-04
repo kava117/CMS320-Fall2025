@@ -42,6 +42,19 @@ public class Worldstate : MonoBehaviour
         fuel = 5;
     }
 
+    public void ResetData()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     public void SetLocation(string newLocation)
     {
         Debug.Log("Worldstate: setting location");
