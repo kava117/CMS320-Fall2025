@@ -3,7 +3,9 @@ VAR onScreen = false
 VAR hasAccess = false
 
 
--> Illinois
+-> SouthDakota
+
+
 
 
 
@@ -246,14 +248,14 @@ You roll your window down as you approach.
 * ["Ouch thats tough, can't imagine being stuck out here in this weather."]#speaker: Player 
 
     "I bet the heat in your car feels pretty nice right about now.  #speaker: Matt
+    "Oh uh I mean, yeah I guess." #speaker: Player 
     
 * ["I'm so sorry, when is the last time you saw them?"]#speaker: Player 
     
     "It's been 4 months. I was on an international work trip when my layover got cancelled. Hmm, just my luck."#speaker: Matt
    
 
-- 
-* ["Oh wow."]#speaker: Player 
+
 -
 
 "Sorry, I don't mean to dump all this on you." #speaker: Matt
@@ -390,8 +392,6 @@ This gut is a nut job I can already tell. #speaker: Player
 
         "Alright well just... be safe and uh... dont't burn anything down!"#speaker: Player 
         Huh, well anyways. 
-        * * * [I should probably check that shed over there for some gasoline while I'm here.]#speaker: Player 
-        -> END
         * * *  [Time to hit the road, I don't want wanna be by this lunatic for any second longer.]#speaker: Player 
         -> END
         
