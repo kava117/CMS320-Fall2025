@@ -30,6 +30,8 @@ public class SceneLoader : MonoBehaviour
    // private int sceneLevel = 0;
     private Sprite backgroundSprite;
     private string backgroundSpriteName;
+    public static bool ContinueLocked = false;
+
 
 
     private void Awake()
@@ -70,6 +72,8 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadScene(string locationName)
     {
+        ContinueLocked = false;
+
         DisableGameOverUI();
         DisableGameWinUI();
         DisableMapUI(); // disable the map
@@ -224,6 +228,9 @@ public class SceneLoader : MonoBehaviour
         //audio stuff -emma
         SoundController.Instance.PlayBadEndingSong();
 
+        ContinueLocked = true;
+
+
 
         DisableMapUI();
         DisableNightUI();
@@ -249,7 +256,7 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadGameWin()
     {
-
+        ContinueLocked = true;
         SoundController.Instance.PlayGoodEndingSong();
 
         DisableMapUI();

@@ -70,6 +70,11 @@ public class DialogueManager : MonoBehaviour
 
     public void Update()
     {
+        if (SceneLoader.ContinueLocked)
+        {
+            return;
+        }
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             // if dialogue not playing, you cant let the user skip dialogue

@@ -442,7 +442,7 @@ MonoBehaviour:
   menuButton: {fileID: 8300000, guid: e15ad303106f9d04bb894ddd8ffff9f8, type: 3}
   badEnding: {fileID: 8300000, guid: b55e5b3dc5c286c40b62e210445ca4c2, type: 3}
   goodEnding: {fileID: 8300000, guid: 74d5cbe740ca56446a2c5c0644ffae96, type: 3}
-  continueButton: {fileID: 8300000, guid: 2eb41fe52abd6b343ab36e69b2e67baf, type: 3}
+  continueButton: {fileID: 8300000, guid: e15ad303106f9d04bb894ddd8ffff9f8, type: 3}
   mapButtons: {fileID: 8300000, guid: 82ed6ce34ea868740aa4472d69fc6c8e, type: 3}
 --- !u!1 &704025854
 GameObject:
