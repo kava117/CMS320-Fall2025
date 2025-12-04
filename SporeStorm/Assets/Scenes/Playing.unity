@@ -285,7 +285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneController
   sceneLoader: {fileID: 450093219}
-  worldstate: {fileID: 0}
+  worldstate: {fileID: 91405577}
 --- !u!4 &41484275
 Transform:
   m_ObjectHideFlags: 0
