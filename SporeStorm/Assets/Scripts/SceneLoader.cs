@@ -78,6 +78,9 @@ public class SceneLoader : MonoBehaviour
         LoadSceneAssets(locationName);
         EnableSceneUI(); // re-enable general ui
 
+        //SoundController.Instance.PlayBackgroundMusic(); // play background music when playing scene loads
+
+
         LoadDialogueEvent(locationName); // fetch dialogue and load all dialogue ui
         Debug.Log("scene loader: loaded dialogue");
     }
@@ -214,8 +217,14 @@ public class SceneLoader : MonoBehaviour
         gameOverUI.gameObject.SetActive(false);
     }
 
+
+
     public void LoadGameOver()
     {
+        //audio stuff -emma
+        SoundController.Instance.PlayBadEndingSong();
+
+
         DisableMapUI();
         DisableNightUI();
         DisableSceneUI();
@@ -240,6 +249,9 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadGameWin()
     {
+
+        SoundController.Instance.PlayGoodEndingSong();
+
         DisableMapUI();
         DisableNightUI();
         DisableSceneUI();

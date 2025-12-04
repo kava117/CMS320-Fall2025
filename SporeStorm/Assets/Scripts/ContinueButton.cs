@@ -19,6 +19,7 @@ public class ContinueButton : MonoBehaviour
 
     private void ChangeSceneMap()
     {
+
         sceneController.GoToMap();
     }
 }

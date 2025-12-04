@@ -23,6 +23,7 @@ public class MapButtonBehavior : MonoBehaviour
     {
         // calls function from map panel ui and worldstate to alter the next
         // location depending on where the user presses
+        SoundController.Instance.PlayMapClick();
         mapPanelUI.ChangeNextLocation(button.name);
     }
 }

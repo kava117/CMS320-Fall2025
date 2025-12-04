@@ -21,6 +21,8 @@ public class MapContinueButton : MonoBehaviour
 
     private void ChangeLocation()
     {
+        SoundController.Instance.PlayContinueClick();
+        Debug.Log("Click sound???");
         string nextLocation = mapPanelUI.GetNextLocation();
         // null guard in case the player hasn't chosen a next location yet
         if (nextLocation == null)

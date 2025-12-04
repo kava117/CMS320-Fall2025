@@ -11,7 +11,14 @@ public class SoundController : MonoBehaviour
     public AudioClip menuSong;
     public AudioClip typing;
     public AudioClip stateMusic;
-    public AudioClip click;
+    public AudioClip menuButton;
+    public AudioClip badEnding;
+    public AudioClip goodEnding;
+    public AudioClip continueButton;
+    public AudioClip mapButtons;
+
+
+
 
 
     private void Start()
@@ -49,9 +56,19 @@ public class SoundController : MonoBehaviour
     }
 
 
+    public void PlayContinueClick()
+    {
+        PlaySFX(continueButton);
+    }
+
+    public void PlayMapClick()
+    {
+        PlaySFX(mapButtons);
+    }
+
     public void PlayClick()
     {
-        PlaySFX(click);
+        PlaySFX(menuButton);
     }
 
 
@@ -68,6 +85,25 @@ public class SoundController : MonoBehaviour
     {
         musicSource.Stop();
     }
+
+
+
+    public void PlayBadEndingSong()
+    {
+        StopMusic();
+
+        PlayMusic(badEnding);
+    }
+
+    public void PlayGoodEndingSong()
+    {
+        StopMusic();
+
+        PlayMusic(goodEnding);
+    }
+
+
+
 
     public void PlayMenuSong()
     {
