@@ -17,6 +17,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] public bool hasSasha = false;
     [SerializeField] public bool hasAccess = false;
     [SerializeField] public bool idahoFam = false; 
+    [SerializeField] public bool hasPeter = false;
 
 
 
@@ -116,8 +117,11 @@ public class DialogueManager : MonoBehaviour
             }else if( knotName == "Idaho" && idahoFam == true){
                 knotName = "IdahoWithFam";
                 story.ChoosePathString(knotName); 
-
+            } else if(knotName == "NorthDakota" && hasPeter == true){
+                knotName = "NorthDakotaWithPeter";
+                story.ChoosePathString(knotName);
             }
+
             else{ 
                 story.ChoosePathString(knotName);
             } 
@@ -229,6 +233,10 @@ public class DialogueManager : MonoBehaviour
                 case "idahoFam":
                     Debug.Log("idahoFam="+ tagValue);
                     idahoFam = bool.Parse(tagValue);
+                    break;
+                case "hasPeter":
+                    Debug.Log("hasPeter="+ tagValue);
+                    hasPeter = bool.Parse(tagValue);
                     break;
 
 

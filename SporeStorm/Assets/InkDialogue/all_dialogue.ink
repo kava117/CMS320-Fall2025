@@ -3,6 +3,8 @@ VAR onScreen = false
 VAR hasAccess = false
 
 
+-> Illinois
+
 
 
 === Florida ===
@@ -47,9 +49,9 @@ It's hard to believe the news is real... a giant, infectious storm? That sounds 
 - Well, shit.
 - Maybe you could collect supplies from around here? It's not like anyone is around to use it anymore.
 - Yeah, that's a good idea. But what to look for first? There's only so many hours in the day...
-* [Food, definitely. (-3 hours)] #food:true #hours:3
-* [Water for sure. (-4 hours)] #water:true #hours:4
-* [Can't get anywhere without gas. (-2 hours)] #gas:true #hours:2
+* [Food, definitely. ] #food:true #hours:3
+* [Water for sure.] #water:true #hours:4
+* [Can't get anywhere without gas.] #gas:true #hours:2
 - You walk forward more, noticing a lone mechanic waiting outside what appears to be an abandoned garage.
     "What are you still doing here? They sent out the evacuation notice hours ago." #speaker: Jane
     * ["The same could be said about you, y'know."]
@@ -136,6 +138,7 @@ Never thought I would actually step foot in Illinois, but here we are. There's a
 
 
 "Hrmph. I've seen plenty of punks like you coming by here causing all sorts of trouble. *cough cough* Be on your way now."# speaker: Peter
+-
 
 
 * ["Please sir, I'm just looking for some supplies to help on my drive. I've come from Florida and I'm only about halfway to the bunker."]# speaker: Player
@@ -173,7 +176,7 @@ Never thought I would actually step foot in Illinois, but here we are. There's a
     
     * * ["Thank you sir. Are you sure you don't want to hitch a ride to the bunker? I've got more room in the back."]# speaker: Player
 
-        "So the roads really are that bad? I guess it can't be that bad of an idea... *cough cough* I guess I'll hitch a ride. Thanks, man."# speaker: Peter
+        "So the roads really are that bad? I guess it can't be that bad of an idea... *cough cough* I guess I'll hitch a ride. Thanks, man."# speaker: Peter # hasPeter: true
 
         * * * [Continue on the drive.]# speaker: Player  #joining: true
             ->END
@@ -196,6 +199,24 @@ Never thought I would actually step foot in Illinois, but here we are. There's a
     
     
     
+    
+    
+
+
+=== NorthDakotaWithPeter ===
+It feels like you've been driving for decades. #speaker: Player 
+Ever since Peter joined things have felt.. different. 
+He's been coughing up a storm the past day. 
+It starts to feel a bit stuffy in the car, so you roll the windows down. 
+You look over at Peter and notice his arm is covered in hives. 
+"Hey.. could we *cough* pull over for a second, I think I need some fresh air." #speaker: Peter
+Hives, cough, shortness of breath... #speaker: Player
+You realize right away he's been infected all along.
+"God damn it you knew didn't you?" 
+"I didn't think it was real.. I'm sorry..." #speaker: Peter 
+The damage is already done. #speaker: Player
+You know that being trapped in this small space with a man that's already infected is the worst thing you could've done. #gameover: true
+->END
     
     
     
