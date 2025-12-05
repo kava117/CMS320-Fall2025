@@ -68,8 +68,9 @@ public class MapPanelUI : MonoBehaviour
         }
         else if (currentLocation == "Wyoming")
         {
-            //Idaho
+            //Idaho washington
             mapButtons[7].gameObject.SetActive(true); // idaho
+            mapButtons[10].gameObject.SetActive(true); // washington
         }
         else if (currentLocation == "Idaho")
         {
@@ -80,7 +81,8 @@ public class MapPanelUI : MonoBehaviour
         }
         else if (currentLocation == "Utah")
         {
-            //arizona
+            //arizona washingotn
+            mapButtons[10].gameObject.SetActive(true); // washington
             mapButtons[9].gameObject.SetActive(true); // arizona
         }
     }

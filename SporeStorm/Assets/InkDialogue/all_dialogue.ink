@@ -21,18 +21,31 @@ What to pick...
 * [Clean water seems most important.] #water:true #hours:1
   You scramble around your apartment, grabbing as many containers you can to fill with water.
   You probably have enough time to grab something else... but what?
-  * * [Food should be prioritized.] #food:true #hours:1
-  * * [Gas will probably be hard to come by.] #gas:true #hours:1
 * [Food should be prioritized.] #food:true #hours:1
   You dig through every cupboard in your apartment, fishing for as much food as you can find.
   You probably have enough time to grab something else... but what?
-  * * [Clean water seems most important.] #water:true #hours:1
-  * * [Gas will probably be hard to come by. ] #gas:true #hours:1
-* [Gas will probably be hard to come by. ] #gas:true #hours:1
-  You sneak downstairs, finding the door to the storage room already open. Most of the supplies have already been cleared out, but you find a full jerrycan left.
-  You probably have enough time to grab something else... but what?
-  * * [Clean water seems most important. ] #water:true #hours:1
-  * * [Food should be prioritized. ] #food:true #hours:1
+- 
+* [I could grab whatever else I can fit in my car.]
+* [There's nothing else important, I should rest up first.] 
+        You realize how tired you are, and decide to take a power nap before hitting the road.
+        You drift off to sleep...
+        ...zzz...
+        ...
+        You wake up with a jolt, realizing how hard to breathe it is.
+        ->OutOfTime
+        
+
+-
+You notice your phone starts ringing. It's Travis your old friend from College. 
+"Yo, have you heard the news?? We gotta get to Washington state, they've got some bunker up there." #speaker: Travis
+"Can you believe this? How are you doing?" #speaker: Player
+"I don't know what to do man, I'm at my cabin in Utah and my friends decided to leave early yesterday." #speaker: Travis
+"I'm stuck here with no way out. Bro this shit is NUTS." 
+"I'm about to leave my apartment in Florida." #speaker: Player
+"I can try and come get you, as long as these spores don't take me." 
+"Oh man you're a life saver, I'll send you the address. It's that same place we used to go to, I'm sure you remember." #speaker: Travis
+"I got you man, stay safe till then." #speaker: Player 
+
 
 --> END
 
@@ -65,7 +78,7 @@ It's hard to believe the news is real... a giant, infectious storm? That sounds 
             "I get it. I've heard it's pretty bad though - seen people around with blisters and rashes all over. Looks... painful."
     - 
     * ["God, that's awful. Maybe the news was right for once. But, if you saw it all, why aren't you leaving?"] #speaker: Player 
-        "Can't, the government shut down the buses. I got left here to tough it out."
+        "Can't, the government shut down the buses. I got left here to tough it out." #speaker: Jane
             * * ["It wouldn't feel right leaving you stranded, can I offer a ride?"]
                 "Are you sure? I wouldn't want to be a burden. I've handled a lot in my life, some mushrooms shouldn't be too hard to deal with."
             * * * ["No, please, I insist. No decent human could leave someone else here stranded."] #joining: true
@@ -657,7 +670,7 @@ Who knew a deadly storm is what would have brought me here...
 === Utah ===
 I know travis is around here somewhere. His cabin should be right around here. #speaker: Player
 
-"Yo! Bro! Over here man!" #speaker: Travis
+"Yo! Brochacho! Over here man!" #speaker: Travis
 
 "I've been stranded here for AGESS, I thought you forgot about me!"
 

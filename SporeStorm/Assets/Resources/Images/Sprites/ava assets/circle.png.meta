@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1d7c43944d8324a89972349a29fbcc31
+guid: b163b10807a30614f9a5999a72f5d13d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6879538022904502005
-    second: newspaper_0
+      213: -6231044458718751821
+    second: circle_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: newspaper_0
+      name: circle_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1414
-        height: 2000
+        width: 37
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5f6140ae167097f50800000000000000
-      internalID: 6879538022904502005
+      spriteID: 3b3176a0412e689a0800000000000000
+      internalID: -6231044458718751821
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      newspaper_0: 6879538022904502005
+      circle_0: -6231044458718751821
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

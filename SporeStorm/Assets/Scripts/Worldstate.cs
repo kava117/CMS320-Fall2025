@@ -1,7 +1,5 @@
 using System.Collections.Generic;
 using Unity.VisualScripting;
-using UnityEditor.SpeedTree.Importer;
-using UnityEditor.U2D.Sprites;
 using UnityEngine;
 
 public class Worldstate : MonoBehaviour

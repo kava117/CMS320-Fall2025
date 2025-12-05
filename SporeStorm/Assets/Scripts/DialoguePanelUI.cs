@@ -1,11 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using Ink.Runtime;
 using TMPro;
 using UnityEngine;
-using UnityEngine.InputSystem.Android;
 using UnityEngine.UI;
 
 public class DialoguePanelUI : MonoBehaviour
@@ -53,7 +51,7 @@ public class DialoguePanelUI : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && counter >= 10)
+        if (Input.GetKeyDown(KeyCode.Space) && counter >= 5)
         {
             spaceDown = true;
         }
@@ -140,7 +138,7 @@ public class DialoguePanelUI : MonoBehaviour
             {
                 spaceDown = false;
                 Debug.Log("Increasing Typing Speed");
-                typingSpeed = .00001f;
+                typingSpeed = .000001f;
             }
 
             yield return new WaitForSeconds(typingSpeed);

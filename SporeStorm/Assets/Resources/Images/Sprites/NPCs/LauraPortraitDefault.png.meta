@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      LauraPortraitDefaut 1_0: 7741431878721232120
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

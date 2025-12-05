@@ -181,11 +181,11 @@ MonoBehaviour:
     North Atlantic Ocean, making its way towards the east coast with speeds up to
     140 mph. Although not much is known about the origin of this storm, one thing
     is for sure, you do not want to mess with it. All citizens are urged to evacuate
-    their state to their designated bunker location. You are also urged to not interact
-    with anyone who has come into contact with the storm as it's infection is highly
-    contagious. Common side effects include but are not limited to: hives, vomiting,
-    agitated behavior, welts, and even death. If you have any concerns please contact
-    your states hotline at....."
+    their state to Washington State. You are also urged to not interact with anyone
+    who has come into contact with the storm as it's infection is highly contagious.
+    Common side effects include but are not limited to: hives, vomiting, agitated
+    behavior, welts, and even death. If you have any concerns please contact your
+    states hotline at....."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
