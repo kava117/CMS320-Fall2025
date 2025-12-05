@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class RetryButtonBehavior : MonoBehaviour
+public class ExitButtonBehavior : MonoBehaviour
 {
     [SerializeField] private Button button;
     [SerializeField] private SceneController sceneController;
