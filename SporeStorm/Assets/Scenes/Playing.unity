@@ -1032,6 +1032,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 118049759}
     m_Modifications:
+    - target: {fileID: 1569096665433219188, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8733374820279990608, guid: 7c0dc47dd20b64f91bb0bba369998fa9, type: 3}
+    - target: {fileID: 1569096665433219188, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1569096665433219188, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1569096665433219188, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1569096665433219188, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
+      propertyPath: m_Maskable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2050717287309653389, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Name
       value: Missouri
@@ -1041,16 +1061,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3313597899185454369, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
+      propertyPath: m_Transition
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3313597899185454369, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Colors.m_NormalColor.b
-      value: 0.16850829
+      value: 0.62352943
       objectReference: {fileID: 0}
     - target: {fileID: 3313597899185454369, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Colors.m_NormalColor.g
-      value: 0.16850829
+      value: 0.74509805
       objectReference: {fileID: 0}
     - target: {fileID: 3313597899185454369, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Colors.m_NormalColor.r
-      value: 0.18490559
+      value: 0.8039216
+      objectReference: {fileID: 0}
+    - target: {fileID: 4305701514732749343, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5335123745107474654, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Pivot.x
@@ -2304,6 +2332,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 118049759}
     m_Modifications:
+    - target: {fileID: 1569096665433219188, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8733374820279990608, guid: 7c0dc47dd20b64f91bb0bba369998fa9, type: 3}
     - target: {fileID: 2050717287309653389, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Name
       value: Utah
@@ -2314,15 +2346,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3313597899185454369, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Colors.m_NormalColor.b
-      value: 0.16850829
+      value: 0.62352943
       objectReference: {fileID: 0}
     - target: {fileID: 3313597899185454369, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Colors.m_NormalColor.g
-      value: 0.16850829
+      value: 0.74509805
       objectReference: {fileID: 0}
     - target: {fileID: 3313597899185454369, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Colors.m_NormalColor.r
-      value: 0.18490559
+      value: 0.8039216
       objectReference: {fileID: 0}
     - target: {fileID: 5335123745107474654, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Pivot.x
@@ -2464,6 +2496,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 118049759}
     m_Modifications:
+    - target: {fileID: 1569096665433219188, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8733374820279990608, guid: 7c0dc47dd20b64f91bb0bba369998fa9, type: 3}
     - target: {fileID: 2050717287309653389, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Name
       value: SouthDakota
@@ -2474,15 +2510,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3313597899185454369, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Colors.m_NormalColor.b
-      value: 0.16850829
+      value: 0.62352943
       objectReference: {fileID: 0}
     - target: {fileID: 3313597899185454369, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Colors.m_NormalColor.g
-      value: 0.16850829
+      value: 0.74509805
       objectReference: {fileID: 0}
     - target: {fileID: 3313597899185454369, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Colors.m_NormalColor.r
-      value: 0.18490559
+      value: 0.8039216
       objectReference: {fileID: 0}
     - target: {fileID: 5335123745107474654, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Pivot.x
@@ -2987,6 +3023,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 118049759}
     m_Modifications:
+    - target: {fileID: 1569096665433219188, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8733374820279990608, guid: 7c0dc47dd20b64f91bb0bba369998fa9, type: 3}
     - target: {fileID: 2050717287309653389, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Name
       value: Wyoming
@@ -2997,15 +3037,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3313597899185454369, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Colors.m_NormalColor.b
-      value: 0.16850829
+      value: 0.62352943
       objectReference: {fileID: 0}
     - target: {fileID: 3313597899185454369, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Colors.m_NormalColor.g
-      value: 0.16850829
+      value: 0.74509805
       objectReference: {fileID: 0}
     - target: {fileID: 3313597899185454369, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Colors.m_NormalColor.r
-      value: 0.18490559
+      value: 0.8039216
       objectReference: {fileID: 0}
     - target: {fileID: 5335123745107474654, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Pivot.x
@@ -6540,6 +6580,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 118049759}
     m_Modifications:
+    - target: {fileID: 1569096665433219188, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8733374820279990608, guid: 7c0dc47dd20b64f91bb0bba369998fa9, type: 3}
     - target: {fileID: 2050717287309653389, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Name
       value: Mississippi
@@ -6550,15 +6594,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3313597899185454369, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Colors.m_NormalColor.b
-      value: 0.16850829
+      value: 0.62352943
       objectReference: {fileID: 0}
     - target: {fileID: 3313597899185454369, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Colors.m_NormalColor.g
-      value: 0.16850829
+      value: 0.74509805
       objectReference: {fileID: 0}
     - target: {fileID: 3313597899185454369, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Colors.m_NormalColor.r
-      value: 0.18490559
+      value: 0.8039216
       objectReference: {fileID: 0}
     - target: {fileID: 5335123745107474654, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Pivot.x
@@ -7907,6 +7951,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 118049759}
     m_Modifications:
+    - target: {fileID: 1569096665433219188, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8733374820279990608, guid: 7c0dc47dd20b64f91bb0bba369998fa9, type: 3}
     - target: {fileID: 2050717287309653389, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Name
       value: Washington
@@ -7917,15 +7965,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3313597899185454369, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Colors.m_NormalColor.b
-      value: 0.16850829
+      value: 0.62352943
       objectReference: {fileID: 0}
     - target: {fileID: 3313597899185454369, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Colors.m_NormalColor.g
-      value: 0.16850829
+      value: 0.74509805
       objectReference: {fileID: 0}
     - target: {fileID: 3313597899185454369, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Colors.m_NormalColor.r
-      value: 0.18490559
+      value: 0.8039216
       objectReference: {fileID: 0}
     - target: {fileID: 5335123745107474654, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Pivot.x
@@ -8203,6 +8251,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 118049759}
     m_Modifications:
+    - target: {fileID: 1569096665433219188, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8733374820279990608, guid: 7c0dc47dd20b64f91bb0bba369998fa9, type: 3}
     - target: {fileID: 2050717287309653389, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Name
       value: Illinois
@@ -8213,15 +8265,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3313597899185454369, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Colors.m_NormalColor.b
-      value: 0.16850829
+      value: 0.62352943
       objectReference: {fileID: 0}
     - target: {fileID: 3313597899185454369, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Colors.m_NormalColor.g
-      value: 0.16850829
+      value: 0.74509805
       objectReference: {fileID: 0}
     - target: {fileID: 3313597899185454369, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Colors.m_NormalColor.r
-      value: 0.18490559
+      value: 0.8039216
       objectReference: {fileID: 0}
     - target: {fileID: 5335123745107474654, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Pivot.x
@@ -8363,6 +8415,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 118049759}
     m_Modifications:
+    - target: {fileID: 1569096665433219188, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8733374820279990608, guid: 7c0dc47dd20b64f91bb0bba369998fa9, type: 3}
     - target: {fileID: 2050717287309653389, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Name
       value: Nebraska
@@ -8373,15 +8429,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3313597899185454369, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Colors.m_NormalColor.b
-      value: 0.16850829
+      value: 0.62352943
       objectReference: {fileID: 0}
     - target: {fileID: 3313597899185454369, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Colors.m_NormalColor.g
-      value: 0.16850829
+      value: 0.74509805
       objectReference: {fileID: 0}
     - target: {fileID: 3313597899185454369, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Colors.m_NormalColor.r
-      value: 0.18490559
+      value: 0.8039216
       objectReference: {fileID: 0}
     - target: {fileID: 5335123745107474654, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Pivot.x
@@ -8523,6 +8579,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 118049759}
     m_Modifications:
+    - target: {fileID: 1569096665433219188, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8733374820279990608, guid: 7c0dc47dd20b64f91bb0bba369998fa9, type: 3}
     - target: {fileID: 2050717287309653389, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Name
       value: Idaho
@@ -8533,15 +8593,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3313597899185454369, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Colors.m_NormalColor.b
-      value: 0.16850829
+      value: 0.62352943
       objectReference: {fileID: 0}
     - target: {fileID: 3313597899185454369, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Colors.m_NormalColor.g
-      value: 0.16850829
+      value: 0.74509805
       objectReference: {fileID: 0}
     - target: {fileID: 3313597899185454369, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Colors.m_NormalColor.r
-      value: 0.18490559
+      value: 0.8039216
       objectReference: {fileID: 0}
     - target: {fileID: 5335123745107474654, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Pivot.x
@@ -8683,6 +8743,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 118049759}
     m_Modifications:
+    - target: {fileID: 1569096665433219188, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8733374820279990608, guid: 7c0dc47dd20b64f91bb0bba369998fa9, type: 3}
     - target: {fileID: 2050717287309653389, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Name
       value: Arizona
@@ -8693,15 +8757,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3313597899185454369, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Colors.m_NormalColor.b
-      value: 0.16850829
+      value: 0.62352943
       objectReference: {fileID: 0}
     - target: {fileID: 3313597899185454369, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Colors.m_NormalColor.g
-      value: 0.16850829
+      value: 0.74509805
       objectReference: {fileID: 0}
     - target: {fileID: 3313597899185454369, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Colors.m_NormalColor.r
-      value: 0.18490559
+      value: 0.8039216
       objectReference: {fileID: 0}
     - target: {fileID: 5335123745107474654, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Pivot.x
@@ -10094,8 +10158,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 8733374820279990608, guid: 7c0dc47dd20b64f91bb0bba369998fa9, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -10292,6 +10356,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 118049759}
     m_Modifications:
+    - target: {fileID: 1569096665433219188, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8733374820279990608, guid: 7c0dc47dd20b64f91bb0bba369998fa9, type: 3}
     - target: {fileID: 2050717287309653389, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Name
       value: NorthDakota
@@ -10302,15 +10370,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3313597899185454369, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Colors.m_NormalColor.b
-      value: 0.16850829
+      value: 0.62352943
       objectReference: {fileID: 0}
     - target: {fileID: 3313597899185454369, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Colors.m_NormalColor.g
-      value: 0.16850829
+      value: 0.74509805
       objectReference: {fileID: 0}
     - target: {fileID: 3313597899185454369, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Colors.m_NormalColor.r
-      value: 0.18490559
+      value: 0.8039216
       objectReference: {fileID: 0}
     - target: {fileID: 5335123745107474654, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Pivot.x
@@ -10452,9 +10520,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 118049759}
     m_Modifications:
+    - target: {fileID: 1569096665433219188, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8733374820279990608, guid: 7c0dc47dd20b64f91bb0bba369998fa9, type: 3}
     - target: {fileID: 2050717287309653389, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Name
       value: MapButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 3313597899185454369, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
+      propertyPath: m_Colors.m_NormalColor.b
+      value: 0.62352943
+      objectReference: {fileID: 0}
+    - target: {fileID: 3313597899185454369, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 0.74509805
+      objectReference: {fileID: 0}
+    - target: {fileID: 3313597899185454369, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
+      propertyPath: m_Colors.m_NormalColor.r
+      value: 0.8039216
       objectReference: {fileID: 0}
     - target: {fileID: 5335123745107474654, guid: f8de106cc5ba4fc439a91b60d2474b83, type: 3}
       propertyPath: m_Pivot.x
