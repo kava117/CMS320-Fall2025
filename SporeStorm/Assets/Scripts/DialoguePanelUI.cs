@@ -138,7 +138,7 @@ public class DialoguePanelUI : MonoBehaviour
             {
                 spaceDown = false;
                 Debug.Log("Increasing Typing Speed");
-                typingSpeed = .000001f;
+                typingSpeed = .000000000001f;
             }
 
             yield return new WaitForSeconds(typingSpeed);

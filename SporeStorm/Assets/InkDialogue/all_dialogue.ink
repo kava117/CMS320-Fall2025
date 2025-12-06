@@ -341,13 +341,13 @@ Wow, this place kinda reminds me of my old campus. What a small world we live in
 You notice an... odd.. looking man running around the grassy field infront of what appears to be the science building. 
 
 
-"HEY! YOU THERE! Stay back, and I mean it, don't come ANY closer to me." #speaker: Dr. Thompson 
+"HEY! YOU THERE! Stay back, and I mean it, don't come ANY closer to me." #speaker: DrThompson 
 
 
 This gut is a nut job I can already tell. #speaker: Player 
 * ["Woah woah, I don't mean any harm. I just stumbled across this campus on my drive to the bunker."]
 
-"Bunker you say, where.. the government is. Fascinating... very very fascinating..."#speaker: Dr. Thompson 
+"Bunker you say, where.. the government is. Fascinating... very very fascinating..."#speaker: Dr.Thompson 
 
 * * ["Hey buddy are you ok?"]#speaker: Player 
     ->ND2
@@ -356,7 +356,7 @@ This gut is a nut job I can already tell. #speaker: Player
     
 == ND2 ===
 
-"I have a secret to tell you, but you can't tell ANYONE. Not even anyone on that little phone of yours. YOU SWEAR?"#speaker: Dr. Thompson 
+"I have a secret to tell you, but you can't tell ANYONE. Not even anyone on that little phone of yours. YOU SWEAR?"#speaker: Dr.Thompson 
 
 
 * * ["Alright man I swear I swear, whatever you say is safe with me."]#speaker: Player 
@@ -366,33 +366,33 @@ This gut is a nut job I can already tell. #speaker: Player
 
 == ND3 ==
 
-"My name is Dr. Shaun Thompson, Ph. D in biotechnology. And today, November 6th, 1995 marks the date I found the cure for the radioactive sporestorm that is threatening North America. #speaker: Dr. Thompson 
+"My name is Dr. Shaun Thompson, Ph. D in biotechnology. And today, November 6th, 1995 marks the date I found the cure for the radioactive sporestorm that is threatening North America. #speaker: Dr.Thompson 
 
 
 * * ["I should really get going now..."]#speaker: Player 
 
-    "Not quite yet my friend, there is still much to discuss."#speaker: Dr. Thompson 
+    "Not quite yet my friend, there is still much to discuss."#speaker: Dr.Thompson 
 
     ->ND4
 * * [A cure? That sounds a little too good ot be true don't you think?"]
 
-    "Do you doubt Dr. Thompson?? That's absurd. My spore neautrilizer is by far the most advanced creation the governmetn could ever witness." #speaker: Dr. Thompson 
+    "Do you doubt Dr. Thompson?? That's absurd. My spore neautrilizer is by far the most advanced creation the governmetn could ever witness." #speaker: Dr.Thompson 
 
     ->ND4
     
 === ND4 ==
-"If only I could make it back to Washington with this news, I could be the greatest hero of the 20th century." #speaker: Dr. Thompson 
+"If only I could make it back to Washington with this news, I could be the greatest hero of the 20th century." #speaker: Dr.Thompson 
 
 
 
 * ["Washington you say?"]#speaker: Player 
 
-- "Well yes, that is where head government bunker is correct? I've been working so hard in my office I didn't even think of how I will get there." #speaker: Dr. Thompson 
+- "Well yes, that is where head government bunker is correct? I've been working so hard in my office I didn't even think of how I will get there." #speaker: Dr.Thompson 
 
 
 * ["Well, I'm on my way there now. Is it something I can take with me?" ]#speaker: Player 
 
-    "OH HEAVENS NO. Tools like these cannot be delivered without a professional like me around. I must accompany you." #speaker: Dr. Thompson 
+    "OH HEAVENS NO. Tools like these cannot be delivered without a professional like me around. I must accompany you." #speaker: Dr.Thompson 
 
 
 
@@ -400,7 +400,7 @@ This gut is a nut job I can already tell. #speaker: Player
         -> DOCJOIN
     * * ["I think it's probably safest if you stay here, sorry doc."]#speaker: Player 
 
-        "I understand, well, maybe with the leftover parts the physics professors left behind I could create a make shift teleporter. Tally Ho!"#speaker: Dr. Thompson 
+        "I understand, well, maybe with the leftover parts the physics professors left behind I could create a make shift teleporter. Tally Ho!"#speaker: Dr.Thompson 
 
 
         "Alright well just... be safe and uh... dont't burn anything down!"#speaker: Player 
@@ -415,7 +415,7 @@ This gut is a nut job I can already tell. #speaker: Player
     ->DOCJOIN
     === DOCJOIN=== 
 
-    "Well isn't this a joyous set of events. I shall join you on your journey to Washington State and we shall save the planet!" #speaker: Dr. Thompson 
+    "Well isn't this a joyous set of events. I shall join you on your journey to Washington State and we shall save the planet!" #speaker: Dr.Thompson 
 
     "Quick! Let's rummage through the old janitor shed for some extra gasoline. It won't take too long"   #joining: true
 
@@ -423,7 +423,7 @@ This gut is a nut job I can already tell. #speaker: Player
     
     * * ["It's probably best if we hit the road now, don't want to be driving too late."]#speaker: Player 
 
-- "Well Tally Ho! Let's be on our way"#speaker: Dr. Thompson 
+- "Well Tally Ho! Let's be on our way"#speaker: Dr.Thompson 
 
 
 What a strange guy, but surely he's trustworthy... right?#speaker: Player 
