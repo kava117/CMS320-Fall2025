@@ -251,8 +251,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Brianne Engel - \nArtist, Programmer\n\nAva Kopchak - \nLead Programmer\n\nEmma
-    Scott - \nMusic/SFX, Writer, Programmer"
+  m_text: "Brianne Engel 2026 - \nArtist, Programmer\n\nAva Kopchak 2027 - \nLead
+    Programmer\n\nEmma Scott 2026 - \nMusic/SFX, Writer, Programmer"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
