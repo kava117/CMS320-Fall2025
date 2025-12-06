@@ -1,0 +1,30 @@
+{
+	"dialogueEvents": [
+		{
+			"key": "greeting",
+			"conditions": [],
+			"lines": [
+				{ "text": "THIS IS THE DEFAULT GREETING.", "expression": "default" },
+				{ "text": "IF YOU ARE SEEING THIS, SOMETHING MAY BE WRONG.", "expression": "default" }
+			],
+			"setFlags": ["npc:metPlayer"]
+		},
+		{
+			"key": "afterIntro",
+			"conditions": ["npc:metPlayer"],
+			"lines": [
+				{ "text": "THIS IS THE DEFAULT AFTERINTRO.", "expression": "default" }
+			],
+			"setFlags": []
+		},
+		{
+			"key": "raining",
+			"conditions": ["raining"],
+			"lines": [
+				{ "text": "THIS IS THE DEFAULT RAINING DIALOGUE.", "expression": "default"},
+				{ "text": "BLAH BLAH CHECKING THAT LINE READING WORKS.", "expression": "default"}
+			],
+			"setFlags": []
+		}
+	]
+}

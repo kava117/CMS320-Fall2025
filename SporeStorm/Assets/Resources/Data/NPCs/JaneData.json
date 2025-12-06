@@ -1,0 +1,15 @@
+{
+	"internalName": "Jane",
+	"displayName": "Jane",
+	"portraitPath": "Sprites/NPCs/JanePortraitDefault",
+	"voiceEffect": "Audio/Voices/JaneVoice",
+	"dialogueFile": "Data/Dialogue/JaneDialogue",
+	"hunger": 0,
+	"stress": 0,
+	"health": 0,
+	"sick": false,
+	"flags": {
+		"hasMet": false,
+		"inCar": false
+	}
+}

@@ -1,0 +1,47 @@
+using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.SceneManagement;
+
+/*
+ * this class is STRICTLY for changing scenes as in the actual unity object scenes, not
+ * for loading/changing assets. that stuff goes in SceneLoader
+ */
+public class SceneController : MonoBehaviour
+{
+    [SerializeField] private SceneLoader sceneLoader;
+    [SerializeField] private Worldstate worldstate;
+
+    // for loading ""static" scenes, the menu/map/etc
+    public void ChangeSceneNarration()
+    {
+
+        SceneManager.LoadScene("Narration");
+        SoundController.Instance.PlayMenuSong();
+    }
+
+    public void ChangeSceneMainMenu()
+    {
+        worldstate.ResetData();
+        SceneManager.LoadScene("MainMenu");
+        SoundController.Instance.PlayMenuSong();
+    }
+
+    // for loading an event scene
+    public void ChangeScenePlaying()
+    {
+        SceneManager.LoadScene("Playing");
+        SoundController.Instance.StopMusic();
+        SoundController.Instance.PlayBackgroundMusic();
+    }
+
+    public void ChangeLocation(string locationName)
+    {
+        sceneLoader.LoadScene(locationName);
+    }
+
+    public void GoToMap()
+    {
+        sceneLoader.LoadMap();
+    }
+}
