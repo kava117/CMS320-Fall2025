@@ -1,5 +1,6 @@
 # CMS320-Fall2025
 Final game group project for CMS320
+Gameplay video: https://www.youtube.com/watch?v=NpGQ4iUn1qs
 
 Group Name: Project Roadtrip
 
